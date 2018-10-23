@@ -18,7 +18,7 @@
         // }
 
         // Set the recipient email address.
-        $recipient = "admin@promehedi.com";
+        $recipient = "zookeepers@onezoo.com.au";
 
         // Set the email subject.
         $subject = "New contact from $name";
