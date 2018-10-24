@@ -432,7 +432,7 @@ MEDIAM LAYOUT : 1280px.
     .navigation-wrap.style-2 .container-fluid > .mobile-nav {
         display: block;
     }
-    .suppiler-work .how-content, .suppiler-work .how-content.left {
+    .supplier-work .how-content, .supplier-work .how-content.left {
         padding-right: 0;
         padding-left: 20px;
         margin: 0;
@@ -1244,3 +1244,4 @@ LARGE MOBILE LAYOUT: 480px.
         width: 35px;
     }
 }
+
