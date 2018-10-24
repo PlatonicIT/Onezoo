@@ -22,13 +22,18 @@
             $(".search-overlay").removeClass('active');
             return false;
         });
+
+
+        $('.cta-form > div input').on( 'click', function() {
+            $(this).parent().addClass('active').siblings().removeClass('active');
+        } );
         
 
         // Banner Animation
         if($(window).width() > 992 ) {
 
             var myElement = $('.hero-wrap.animation .container-fluid');
-//            var hero_height = 750;
+            var hero_height = 750;
             $(window).on('scroll', function () {
                 var st = $(this).scrollTop();
                 myElement.css({
@@ -36,7 +41,7 @@
                 });
                 myElement.parents().css({                        
                     // 'height': hero_height - st,
-                    'background-position-y': 0 + st / 3.5
+                    'background-position-y': 50 + st / 3.5
                 });
             });
         }
@@ -67,8 +72,12 @@
         });
 
         // Sticky Menu
-//		pasted
-		function createSticky(sticky) {            
+        if($(".navigation-wrap").hasClass('is-sticky')) {
+            $(function(){  
+                createSticky($(".is-sticky"));
+            });
+              
+            function createSticky(sticky) {            
                 if (typeof sticky !== "undefined") {
               
                   var pos = sticky.offset().top,
@@ -79,14 +88,6 @@
                   });     
                 }
             }
-//		pasted
-		
-        if($(".navigation-wrap").hasClass('is-sticky')) {
-            $(function(){  
-                createSticky($(".is-sticky"));
-            });
-              
-//            fuction moved
         }
 
 
@@ -100,11 +101,17 @@
             adaptiveHeight: true,
             responsive: [
                 {
-                    breakpoint: 1250,
+                    breakpoint: 1600,
                     settings: {
                         arrows: true,
                         centerMode: true,
                         centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 1400,
+                    settings: {
                         slidesToShow: 1
                     }
                 },
@@ -165,8 +172,8 @@
         $(document).bind('click', function(e) {
             var $clicked = $(e.target);
             if (! $clicked.parents().hasClass("drop-down"))
-			$(".drop-down .options ul").hide();
-		});
+                $(".drop-down .options ul").hide();
+        });
 
         $('.jumper').click(function (e) {
             e.preventDefault();

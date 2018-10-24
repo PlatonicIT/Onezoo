@@ -38,7 +38,7 @@ Description: MyPort is a Responsive CV / Resume / V-Card / Personal Website / Po
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #1d2929;
     font-size: 20px;
     font-weight: 300;
@@ -75,10 +75,7 @@ h1, h2, h3, h4 {
 }
 
 p {
-    opacity: 0.70;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 300;
-	font-size: 20px;
+    opacity: 0.75;
 }
 
 img {
@@ -98,6 +95,10 @@ input, textarea, button[type=submit] {
 	background-position: center center;
 }
 
+.bg-light {
+    background-color: #fcfcfc;
+}
+
 .overlay {
 	position: absolute;
 	left: 0;
@@ -110,7 +111,7 @@ input, textarea, button[type=submit] {
 
 .button {
 	display: inline-block;
-	padding: 6px 35px;
+	padding: 8px 35px;
 	text-align: center;
 	border: 1px solid #185179;
 	border-radius: 5px;
@@ -132,6 +133,11 @@ input, textarea, button[type=submit] {
     color: #774dc1;
 }
 
+.button.groups {
+	border: 1px solid #0b9c59;
+    color: #0b9c59;
+}
+
 .button.boxed-btn {
 	color: #fff;
 	background-color: #185179;
@@ -146,6 +152,11 @@ input, textarea, button[type=submit] {
 .button.boxed-btn.brands {
 	background-color: #774dc1;
 	border-color: #774dc1;
+}
+
+.button.boxed-btn.groups {
+	background-color: #0b9c59;
+	border-color: #0b9c59;
 }
 
 .button:hover {
@@ -180,6 +191,11 @@ input, textarea, button[type=submit] {
     border-color: #774dc1;
 }
 
+.button.boxed-btn.groups:hover {
+    color: #0b9c59;
+    border-color: #0b9c59;
+}
+
 .button.transparent-btn {
 	color: #185179;
 	background-color: #fff;
@@ -207,6 +223,10 @@ input, textarea, button[type=submit] {
 
 .button.transparent-btn.brands:hover {
 	background-color: #774dc1;
+}
+
+.button.transparent-btn.groups:hover {
+	background-color: #0b9c59;
 }
 
 .section-padding {
@@ -237,7 +257,7 @@ input, textarea, button[type=submit] {
 }
 
 .section-title {
-    margin-bottom: 150px;
+    margin-bottom: 95px;
     font-weight: 300;
     font-size: 50px;
     position: relative;
@@ -245,7 +265,6 @@ input, textarea, button[type=submit] {
 
 .section-title h1, .section-title h2 {
     color: #fff;
-	font-weight: 300;
 }
 
 .section-title.with-border:after {
@@ -275,12 +294,20 @@ input, textarea, button[type=submit] {
     margin-bottom: 40px;
 }
 
+.section-title.with-border h2 {
+    font-weight: 300;
+}
+
 .subtitle {
     margin-bottom: 65px;
 }
 
 .container-fluid {
-    max-width: 76%;
+    max-width: 90%;
+}
+
+.homepage .container-fluid {
+    max-width: 90%;
 }
 
 .mr-6 {
@@ -480,12 +507,22 @@ input, textarea, button[type=submit] {
 
 .mobile-nav .navbar-toggler {
     float: right;
-    /* width: 20%; */
     background: #185179;
     border-radius: 0;
     margin-right: -15px;
     padding: 13px;
     transition: all 0.3s;
+    height: 53px;
+}
+
+.single-how-inner .rounded-circle {
+    max-width: 550px;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.section-padding {
+    margin-bottom: 0;
 }
 
 .mobile-nav.supplier .navbar-toggler {
@@ -494,6 +531,10 @@ input, textarea, button[type=submit] {
 
 .mobile-nav.brands .navbar-toggler {
     background-color: #774dc1;
+}
+
+.mobile-nav.groups .navbar-toggler {
+    background-color: #0b9c59;
 }
 
 .icons {
@@ -570,7 +611,11 @@ input, textarea, button[type=submit] {
 /* Style 2 */
 .navigation-wrap.style-2 {
     background-color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
+}
+
+.navigation-wrap.home {
+    padding: 20px 0;
 }
 
 .navigation-wrap.style-2 .logo {
@@ -592,6 +637,8 @@ input, textarea, button[type=submit] {
     margin-right: 20px;
     padding: 5px 0;
     display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 .icon-menu li a img {
@@ -635,11 +682,16 @@ input, textarea, button[type=submit] {
 .one-zoo-menu li a {
     display: block;
     padding: 10px 5px;
-    color: #26313b;
+    color: #26313b;    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 .one-zoo-menu ul {display: inline-block;margin-left: 25px;}
 
+.how-title img {
+    margin-right: 10px;
+}
 
 
 
@@ -655,7 +707,7 @@ input, textarea, button[type=submit] {
 * ===================================
 */
 .hero-wrap {
-    height: 860px;
+    height: 750px;
     background-position-x: right;
     padding-top: 50px;
     position: relative;
@@ -682,6 +734,10 @@ input, textarea, button[type=submit] {
 
 .hero-wrap.brands {
     background-image: url(assets/img/brands/hero-bg-brands.png);
+}
+
+.hero-wrap.groups {
+    background-image: url(assets/img/groups/Hero-BG-Green.png);
 }
 
 .hero-wrap.hero-s2 {
@@ -712,6 +768,9 @@ input, textarea, button[type=submit] {
     margin-bottom: -25px;
 }
 
+.hero-inner img {
+   margin-top: 70px;
+}
 
 .hero-inner h1 {
     margin-bottom: 15px;
@@ -734,10 +793,14 @@ input, textarea, button[type=submit] {
     color: #fff;
     font-size: 50px;
     margin-bottom: 0;
+    font-weight: 300;
 }
 
 .hero-inner.style-2 p {
     font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    opacity: 1;
 }
 
 .hero-inner.style-2 {
@@ -915,6 +978,10 @@ input, textarea, button[type=submit] {
     font-size: 20px;
 }
 
+.cta-wrap p {
+    opacity: 0.75;
+}
+
 .cta-wrap .group-button {
     margin-top: 75px;
 }
@@ -946,14 +1013,6 @@ input, textarea, button[type=submit] {
 
 .single-how:last-child {
     margin-bottom: 30px;
-}
-
-.single-how h1 {
-	font-weight: 300;
-    font-size: 40px;
-    margin-bottom: 40px;
-    text-transform: capitalize;
-    line-height: 50px;
 }
 
 .single-how h2 {
@@ -1112,16 +1171,28 @@ input, textarea, button[type=submit] {
     color: #774dc1;
 }
 
+.tab-wrap.groups .tab-pane h2 {
+    color: #0b9c59;
+}
+
 .tab-wrap.supplier .tab-pane h2 {
     color: #ffc646;
 }
 
 .brands .tab-wrap .tab-pane h2 {
-    color: #ffc646;
+    color: #774dc1;
+}
+
+.groups .tab-wrap .tab-pane h2 {
+    color: #0b9c59;
 }
 
 .brands .tab-wrap .tab-pane h2 {
     color: #774dc1;
+}
+
+.groups .tab-wrap .tab-pane h2 {
+    color: #0b9c59;
 }
 
 
@@ -1232,7 +1303,7 @@ input, textarea, button[type=submit] {
     line-height: 60px;
     font-weight: 200;
     color: #fff;
-    opacity: 0.75;
+    opacity: 0.7;
 }
 
 .quote-wrap h2 {
@@ -1244,8 +1315,17 @@ input, textarea, button[type=submit] {
     font-weight: 400;
 }
 
+.quote-wrap.supplier h2 {
+    opacity: 1;
+    margin-bottom: 0;
+}
+
 .quote-wrap.brands h2 {
     color: #774dc1;
+}
+
+.quote-wrap.groups h2 {
+    color: #0b9c59;
 }
 
 span.slicknav_menutxt {
@@ -1265,13 +1345,13 @@ span.slicknav_menutxt {
 }
 .testimonials-wrap {
     overflow-x: hidden;
-    padding: 30px 0;
+    /* padding: 30px 0; */
 }
 
 .single-tes-slide {
     padding: 50px 40px;
     border: 1px solid #eaeaea;
-    margin: 0 -60px;
+    margin: 0 15px;
     outline: none;
     transition: all 0.3s;
     float: left;
@@ -1329,15 +1409,11 @@ span.slicknav_menutxt {
     max-width: 50px;
 }
 
-.tes-content p {
-	opacity: 1;
-	font-weight: 200;
-}
-
 .tes-content {
     padding: 45px 0;
     position: relative;
     font-size: 18px;
+    padding-bottom: 0;
 }
 
 .tes-content:before, .tes-content:after {
@@ -1412,26 +1488,24 @@ span.slicknav_menutxt {
     height: 40px;
     text-align: center;
     content: '-';
-    font-size: 50px;
-    line-height: 0.55;
+    font-size: 40px;
+    line-height: 1;
     border: 1px solid;
     border-radius: 50%;
     color: #7f7f7f;
+    padding-left: 4px;
 }
 
 .tab-header a.collapsed:before {
     content: '+';
-    line-height: 0.7;
+    padding-left: 0;
 }
 
 .tab-content {
     padding-left: 60px;
     font-size: 18px;
     color: #1d2929;
-}
-
-.tab-content p{
-	opacity: 1;
+    /* margin-bottom: 30px; */
 }
 
 .faq-tab {
@@ -1677,9 +1751,36 @@ span.slicknav_menutxt {
     width: 100%;
 }
 
+.cta-form .notification-text {
+    line-height: 1.2;
+}
+
+.cta-form label,.cta-form  input,.cta-form  textarea,.cta-form  button[type=submit] {
+    margin-bottom: 0;
+    position: relative;
+    border-color: transparent;
+}
+
 .cta-form .checkbox {
     width: auto;
     margin-right: 5px;
+}
+
+.cta-form .col-lg-3 i {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: #ddd;
+    height: 100%;
+    padding: 0 15px;
+    line-height: 3.1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cta-form > div.active i {
+    opacity: 1;
+    visibility: visible;
 }
 
 .cta-form .button {
@@ -1687,7 +1788,7 @@ span.slicknav_menutxt {
     background-color: #be4165;
     color: #fff;
     display: block;
-    padding: 13px 45px;
+    padding: 17px 60px;
 }
 
 .cta-form > div {
@@ -1695,7 +1796,7 @@ span.slicknav_menutxt {
     padding-right: 5px;
 }
 
-.supplier-work .single-how .absolute-col {
+.single-how .absolute-col {
     position: absolute;
     left: 0;
     top: 50%;
@@ -1705,16 +1806,16 @@ span.slicknav_menutxt {
     transform: translate(0, -50%);
 }
 
-.supplier-work .single-how .absolute-col .left-img, .supplier-work .single-how .absolute-col .right-img {
+.single-how .absolute-col .left-img, .single-how .absolute-col .right-img {
     top: 50%;
     transform: translate(0, -50%);
 }
 
-.supplier-work .single-how .absolute-col.right {
+.single-how .absolute-col.right {
     left: auto;
     right: 0;
 }
 
-.supplier-work .how-content img {
+.how-content img {
     margin-bottom: 30px;
 }
