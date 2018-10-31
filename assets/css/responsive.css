@@ -35,8 +35,15 @@ Large LAYOUT : 1280px.
         line-height: 37px;
     }
     .tab-menu ul.nav li a {
-        font-size: 28px;
-        line-height: 48px;
+        font-size: 26px;
+        line-height: 42px;
+    }
+    .tab-wrap .tab-pane h2 {
+        font-size: 26px;
+    }
+    .tab-wrap .tab-pane {
+        line-height: 32px;
+        font-size: 18px;  
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -60,11 +67,6 @@ Large LAYOUT : 1280px.
     }
     .quote-wrap {
         padding: 60px 0;
-    }
-    .tab-menu ul.nav li a {
-        margin-bottom: 30px;
-        font-size: 28px;
-        line-height: 50px;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -141,6 +143,9 @@ Large LAYOUT : 1280px.
         top: 66%;
         left: 75%;
     }    
+    .icon-menu li a {
+        font-size: 15px;
+    }
 }
 
 
@@ -199,6 +204,18 @@ MEDIAM LAYOUT : 1280px.
 =======================*/
 
 @media only screen and (max-width: 1200px) {
+    
+    .footer-wrap .row > div {
+        margin-bottom: 50px;
+    }
+    
+    .footer-wrap {
+        padding-bottom: 35px;
+        margin-bottom: 0;
+    }
+    .single-service {
+        min-height: 300px;
+    }
     .section-margin {
         margin: 0;
         padding-bottom: 0;
@@ -260,7 +277,7 @@ MEDIAM LAYOUT : 1280px.
 
     .single-service {
         padding: 30px 20px;
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .section-title {
@@ -329,12 +346,12 @@ MEDIAM LAYOUT : 1280px.
     }
     
     .icon-menu li a {
-        margin-right: 10px;
-        font-size: 16px;
+        margin-right: 8px;
+        font-size: 15px;
     }
     
     .one-zoo-menu li a {
-        font-size: 14px;
+        font-size: 13px;
         padding: 10px 0;
     }
     
@@ -352,7 +369,7 @@ MEDIAM LAYOUT : 1280px.
     }
     
     .login-menu li::before {
-        left: -4px;
+        left: 0;
         top: 4px;
     }
     .login-menu li {
@@ -365,11 +382,6 @@ MEDIAM LAYOUT : 1280px.
         width: 40%;
         right: 0;
     }
-    .tab-menu ul.nav li a {
-        margin-bottom: 35px;
-        font-size: 26px;
-        line-height: 52px;
-    }
     .tab-menu {
         max-width: 540px;
         padding-right: 50px;
@@ -379,7 +391,10 @@ MEDIAM LAYOUT : 1280px.
     }
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px){    
+    .single-service {
+        min-height: unset;
+    }
     
     .tab-wrap .tab-pane {
         position: relative;
@@ -432,7 +447,7 @@ MEDIAM LAYOUT : 1280px.
     .navigation-wrap.style-2 .container-fluid > .mobile-nav {
         display: block;
     }
-    .supplier-work .how-content, .supplier-work .how-content.left {
+    .suppiler-work .how-content, .suppiler-work .how-content.left {
         padding-right: 0;
         padding-left: 20px;
         margin: 0;
@@ -521,6 +536,18 @@ SMALL MOBILE LAYOUT : 320px.
     }
 }
 @media only screen and (max-width: 767px) {
+    .single-category img {
+        max-width: 100px;
+    }
+    .single-category > .col-md-4 {
+        margin-bottom: 30px;
+    }
+    .contact-popup {
+        left: 50%;
+        margin-left: -140px;
+        width: 280px;
+        min-width: unset;
+    }
     .reverse-col {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -729,11 +756,11 @@ SMALL MOBILE LAYOUT : 320px.
     }
     
     .tab-menu ul.nav li a {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         font-size: 20px;
     }
 
-    .footer-wrap {
+    .footer-bottom {
         padding: 20px 0;
     }
 
@@ -1080,12 +1107,12 @@ Tablet LAYOUT: 768px.
     }
     
     .icon-menu li a {
-        margin-right: 10px;
+        margin-right: 8px;
         font-size: 15px;
     }
     
     .one-zoo-menu li a {
-        font-size: 13px;
+        font-size: 12px;
         padding: 10px 0;
     }
     
@@ -1244,4 +1271,3 @@ LARGE MOBILE LAYOUT: 480px.
         width: 35px;
     }
 }
-

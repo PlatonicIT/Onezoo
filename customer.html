@@ -4,13 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Save Time, Make Money with ONEzoo Marketplace. We have hundreds of suppliers Australia wide, all with low minimums and no credit card fees."/>
 
 	<!-- Site Title -->
-	<title>Customer - Welcome to Customer ONEzoo</title>
-
+	<title>Customer Marketplace | ONEzoo</title>
 	<!-- Favicon Icon -->
 	<link href="assets/img/favicon.png" rel="shortcut icon" type="image/png">
-	
 	<!-- Google Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700">
 	<!-- Font-Awesome CSS -->
@@ -27,14 +26,13 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
 	<!-- Slick Slider CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css">
-	
 	<!-- Style CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">	
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
 	<!-- jQeury Library -->
 	<script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
+	
 </head>
 <body>
 
@@ -64,7 +62,7 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="logo wow fadeInLeft">
-								<a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+								<a href="index.html"><img src="assets/img/logo.png" alt="Customer Logo"></a>
 							</div>
 						</div>
 					</div>
@@ -72,8 +70,18 @@
 
 				<div class="col-md-8 text-right">
 					<div class="top-call-to group-button wow fadeInRight">
-						<a href="#" class="button">contact us</a>
+						<a id="contact-btn" href="javascript:void(0);" class="button">contact us</a>
 						<a href="#" class="button boxed-btn">Get started</a>
+
+						<!-- Action For Contact Us -->
+						<div class="contact-popup">
+							<ul>
+								<li><a href="#">Call Now</a></li>
+								<li><a href="#">Send Message</a></li>
+							</ul>
+							<a href="#" class="button">View More</a>
+						</div>
+						<!-- end of Action For Contact Us -->
 					</div>
 				</div>
 			</div>
@@ -86,35 +94,58 @@
 		<div class="container-fluid">
 			<div class="row hide-in-sm">
 				<div class="col-lg-8  col-md-12">
-					<div class="main-menu">
+					<div class="main-menu" id="main-nav">
 						<ul id="menu">
-							<li><a href="#">Features <i class="fa fa-caret-down"></i></a>
-								<ul>
-									<li><a href="#">Dhowpdown Menu</a></li>
-									<li><a href="#">Dhowpdown Menu</a></li>
-									<li><a href="#">Dhowpdown Menu</a></li>
-									<li><a href="#">Dhowpdown Menu</a></li>
+							<li><a href="#">Features</a>
+								<ul>										
+									<li><a href="#">Overview</a></li>
+									<li><a href="#">Customers</a>
+										<ul>											
+											<li><a href="#">Marketplace</a></li>
+											<li><a href="#">Ordering App</a></li>
+											<li><a href="#">Reporting</a></li>
+											<li><a href="#">Earn Points</a></li>
+											<li><a href="#">Pricing and Price Comparisons</a></li>
+											<li><a href="#">Multiple Users</a></li>
+											<li><a href="#">Find New Suppliers</a></li>
+										</ul>
+									</li>
 								</ul>
 							</li>
-							<li><a href="#">Solutions <i class="fa fa-caret-down"></i></a>
+							<li><a href="#">Solutions</a>
 								<ul>
-									<li><a href="#">Dhowpdown Menu</a></li>
-									<li><a href="#">Dhowpdown Menu</a></li>
-									<li><a href="#">Dhowpdown Menu</a></li>
-									<li><a href="#">Dhowpdown Menu</a></li>
+									<li><a href="#">New Venue</a></li>
+									<li><a href="#">Startup Supplier</a></li>
+									<li><a href="#">Hospitality Venue</a></li>
+									<li><a href="#">Local Trader</a></li>
+									<li><a href="#">Distributors</a></li>
+									<li><a href="#">3PL</a></li>
+									<li><a href="#">Brands</a></li>
+									<li><a href="#">Industries We Serve</a></li>
+									<li><a href="#">Chefs Choice</a></li>
+									<li><a href="#">Buying Groups</a></li>
+									<li><a href="#">Franchises</a></li>
+									<li><a href="#">Enterprise</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Pricing</a></li>
 							<li><a href="#">Security</a></li>
-							<li><a href="#">Resources <i class="fa fa-caret-down"></i></a>
+							<li><a href="#">Resources</a>
 								<ul>
-									<li><a href="#">Dhowpdown Menu</a></li>
-									<li><a href="#">Dhowpdown Menu</a></li>
-									<li><a href="#">Dhowpdown Menu</a></li>
-									<li><a href="#">Dhowpdown Menu</a></li>
+									<li><a href="#">Customer Stories</a></li>
+									<li><a href="#">Getting Started</a>
+										<ul>
+											<li><a href="#">Customer</a></li>
+											<li><a href="#">Supplier</a></li>
+											<li><a href="#">Groups</a></li>
+										</ul>
+									</li>
+									<li><a href="#">On-Site Training</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Blog</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Support</a></li>
+							<li><a href="#">References</a></li>
 						</ul>
 					</div>
 					<!-- Mobile Menu -->
@@ -123,8 +154,8 @@
 				<div class="col-lg-4 text-right col-md-12">
 					<div class="main-menu right-menu col-half-left">
 						<ul>
-							<li><a href="#">Sign in</a></li>
-							<li><a href="#">Create Account</a></li>
+							<li><a href="https://onezoo.com.au/login">Sign in</a></li>
+							<li><a href="https://onezoo.com.au/login">Create Account</a></li>
 							<li><a href="#" class="btn_search">
 								<svg class="icon icon--search">
 									<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
@@ -163,34 +194,38 @@
                             <ul>
                                 <li><a href="#" class="dd dd-1">Features <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown ddi-1">
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
+										<li><a href="#">Marketplace</a></li>
+										<li><a href="#">Ordering App</a></li>
+										<li><a href="#">Reporting</a></li>
+										<li><a href="#">Earn Points</a></li>
+										<li><a href="#">Price Comparisons</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#" class="dd dd-2">Solutions <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown ddi-2">
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
+										<li><a href="#">Find New Suppliers</a></li>
+										<li><a href="#">New Business</a></li>
+										<li><a href="#">Existing Business</a></li>
+										<li><a href="#">Buying Groups</a></li>
+										<li><a href="#">Franchises</a></li>
+										<li><a href="#">Enterprise</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Pricing</a></li>
                                 <li><a href="#">Security</a></li>
                                 <li><a href="#" class="dd dd-3">Resources <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown ddi-3">
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
+										<li><a href="#">Customer Stories</a></li>
+										<li><a href="#">Getting Started</a></li>
+										<li><a href="#">On Site Training</a></li>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">Blog</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Support</a></li>
-                                <li><a href="#">Sign in</a></li>
-                                <li><a href="#">Create Account</a></li>
-								<li><a href="#" class="button boxed-btn">Get Started</a></li>
+                                <li><a href="https://onezoo.com.au/login">Sign in</a></li>
+                                <li><a href="https://onezoo.com.au/login">Create Account</a></li>
+								<li><a href="https://onezoo.com.au/login" class="button boxed-btn">Get Started</a></li>
                             </ul>
                         </div>
                     </div>
@@ -209,12 +244,23 @@
 						<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s" data-wow-offset="100">
 							<div class="hero-inner">
 								<img src="assets/img/icons/one.png" alt="">
-								<h1>Save Time, Make Money</h1>
-								<p>Ready to get your business into the 21st century? 
-									ONEzoo will revolutionise the way you interact with your suppleirs and most importantly how you order and re-order.</p>
+								<h1>Save Time, Make Money with ONEzoo Marketplace</h1>
+								<p>Order from all of your suppliers on one platform, seamlessly and easily, Earn 
+									<span class="trigger">points
+										<span class="my-tooltip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, officiis.</span>
+									</span>
+									and pay your own way with no credit card fees and most importantly connect with your suppliers by ONEzoo 
+									<span class="trigger">Chat
+										<span class="my-tooltip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, officiis.</span>
+									</span>
+									to negotiate the best price for your business. If you want a hand getting set up, get in 								
+									<span class="trigger">contact
+										<span class="my-tooltip">0434201204 <br> Lorem, ipsum.</span>
+									</span>
+									with us and well be happy to help.</p>
 								<div class="group-button">
-									<a href="#" class="button boxed-btn">Get started</a>
-									<a href="#" class="button">Watch video</a>
+									<a href="https://onezoo.com.au/login" class="button boxed-btn">Get started</a>
+									<a href="https://player.vimeo.com/video/181458063" class="button play-video">Watch video</a>
 								</div>
 							</div>
 						</div>
@@ -246,7 +292,8 @@
 							</div>
 						</div>
 						<h1>Discover</h1>
-						<p>Browse through the suppliers on our marketplace and find great products.</p>
+						<p>Browse through the suppliers on our marketplace and find great products.
+						</p>
 					</div>
 				</div>
 				<div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s" data-wow-offset="100">
@@ -497,16 +544,103 @@
 	<!-- End of FAQ Area -->
 
 	<!-- Footer Area -->
-	<footer class="footer-wrap">
+	<footer class="footer-wrap section-padding">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 text-center">
-					<p class="copyright">© 2018 OneZoo. Ltd.</p>
+				<div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+					<h4>Features</h4>
+					<ul class="footer-menu">
+						<li><a href="#">Marketplace</a></li>
+						<li><a href="#">Ordering App</a></li>
+						<li><a href="#">Custom Apps and Websites</a></li>
+						<li><a href="#">Reporting</a></li>
+						<li><a href="#">Earn Points</a></li>
+						<li><a href="#">Marketing</a></li>
+						<li><a href="#">Price Comparisons</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+					<h4>Solutions</h4>
+					<ul class="footer-menu">
+						<li><a href="#">Startup</a></li>
+						<li><a href="#">Established Business</a></li>
+						<li><a href="#">Find New Suppliers</a></li>
+						<li><a href="#">New Business</a></li>
+						<li><a href="#">Existing Business</a></li>
+						<li><a href="#">Buying Groups</a></li>
+						<li><a href="#">Franchises</a></li>
+						<li><a href="#">Enterprise</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+					<h4>Resources</h4>
+					<ul class="footer-menu">
+						<li><a href="#">Supplier Success Stories</a></li>
+						<li><a href="#">Getting Started</a></li>
+						<li><a href="#">On Site Training</a></li>
+						<li><a href="#">Customer Stories</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+					<h4>Other Link</h4>
+					<ul class="footer-menu">
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Security</a></li>
+						<li><a href="#">Customer</a></li>
+						<li><a href="#">Brand</a></li>
+						<li><a href="#">Supplier</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+					<ul class="footer-menu">
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-xl-2 col-md-4 col-sm-6">
+					<h4>Get in touch</h4>
+					<p>Lorem ipsum dolor sit amet consectetur.</p>
+					<ul class="contact-menu">
+						<li><a href="#"><i class="fa fa-phone"></i>+88 01XXX XXX XXX</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i>support@domain.com</a></li>
+					</ul>
+					<ul class="app-link">
+						<li><a href="#"><img src="assets/img/play-stor.png" alt=""></a></li>
+						<li><a href="#"><img src="assets/img/app-stor.png" alt=""></a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
 	<!-- End of Footer Area -->
+
+	<!-- Footer Bottom Area -->
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="copyright">&copy; <span id="date">
+						<script>
+							var d = new Date();
+							var $date = d.getFullYear();
+							document.getElementById("date").innerHTML = $date;
+						</script>
+						OneZoo. Ltd.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of Footer Bottom Area -->
 
     <!-- Popper JS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
