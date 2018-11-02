@@ -76,15 +76,20 @@
 
 
         // Backgrond Slider
-        $('.slider-background').owlCarousel({
-            items: 1,
-            fade: true,
-            autoplay: true,
-            animateOut: 'fadeOut',
-            nav: true,
-            loop: true,
-            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
-        });
+        // $('.slider-background').owlCarousel({
+        //     items: 1,
+        //     fade: true,
+        //     autoplay: true,
+        //     animateOut: 'fadeOut',
+        //     nav: true,
+        //     loop: true,
+        //     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        // });
+        
+
+        // Rendom Background Images
+        var random = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+        $('#slide-bg').attr('style','background-image: url(assets/img/slides/slide-' + random + '.jpg)');
         
 
         // Search

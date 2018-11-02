@@ -13,28 +13,12 @@
 	
 	<!-- Google Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700">
-	<!-- Font-Awesome CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-	<!-- Owl-Carousel CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">	
-	<!-- SlickNav CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css">
-	<!-- Magnigic-Popup CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
-	<!-- Animate CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
-	<!-- Slick Slider CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css">
-	
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/vendor.min.css">	
 	<!-- Style CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">	
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
-	<!-- jQeury Library -->
-	<script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
 </head>
 <body class="homepage">
 
@@ -73,7 +57,7 @@
 				<div class="col-lg-2 text-right">
 					<div class="one-zoo-menu">
 						<ul class="login-menu">
-							<li><a href="#">Sing In</a></li>
+							<li><a href="#">Sign In</a></li>
 							<li><a href="#">Help <img src="assets/img/icons/help.ico" alt=""></a></li>
 						</ul>
 					</div>
@@ -112,15 +96,12 @@
 	<!-- End of Navigation Area -->
 
 	<!-- Hero Area -->
-	<section class="hero-wrap hero-s2 bg" style="background-image: url('assets/img/hero-bg-3.jpg');">
-		<!-- Slider Background -->
+	<section class="hero-wrap homepage hero-s2">
+		<!-- Rendom Background -->
 		<div class="slider-background">
-			<div class="single-slide-bg" style="background-image: url(assets/img/slides/slide-1.jpg);"></div>
-			<div class="single-slide-bg" style="background-image: url(assets/img/slides/slide-2.jpg);"></div>
-			<div class="single-slide-bg" style="background-image: url(assets/img/slides/slide-3.jpg);"></div>
-			<div class="single-slide-bg" style="background-image: url(assets/img/slides/slide-4.jpg);"></div>
+			<div class="single-slide-bg" id="slide-bg"></div>		
 		</div>
-		<!-- End of Slider Background -->
+		<!-- End of Rendom Background -->
 
 		<div class="content-table">
 			<div class="content-table-cell">
@@ -132,17 +113,10 @@
 									<div class="hero-inner style-2">
 										<h1>Connecting the world's orders</h1>
 										<p>ONEzoo offers products tailored to a wide range of users, in a wide range of industries.</p>
-										<div class="dorp-down-wrap">
-											<div class="drop-down">
-												<button class="select-menu menu-2"><img src="assets/img/icons/user.png" alt=""> Customer</button>
-												<div class="options options-2">
-													<ul>
-														<li><a href="customer.html"><img src="assets/img/icons/user.png" alt=""> Customer<span class="value">1</span></a></li>
-														<li><a href="supplier.html"><img src="assets/img/icons/suplier.png" alt=""> Supplier<span class="value">2</span></a></li>
-														<li><a href="#"><img src="assets/img/icons/group.png" alt=""> Groups<span class="value">3</span></a></li>
-														<li><a href="#"><img src="assets/img/icons/brand.png" alt=""> Grands<span class="value">3</span></a></li>
-													</ul>
-												</div>
+										<div class="search-box search-group">
+											<div class="search-inner">
+												<input type="search" name="s" id="search" placeholder="Search Here..">
+												<button type="submit" class="button boxed-btn"><i class="fa fa-search"></i></button>
 											</div>
 										</div>
 									</div>
@@ -168,95 +142,10 @@
             </div>            
         </div>
     </div>        
-	</section>
+	</section>	
 	
-	<!-- How Work Area -->
-	
-	<section class="section-padding pb-sm-0" id="learnMore">
-		<!-- Single How -->
-		<div class="single-how-inner style-2">
-			<div class="container-fluid">
-				<div class="row align-items-center">
-					<div class="col-lg-5 reverse-col">
-						<div class="single-how zoo">
-							<h2 class="how-title blue"><img src="assets/img/icons/customer.png" alt=""> Customers</h2>
-							<h2>Order from a Collection of Australia's Best Suppliers.</h2>
-							<p>From Bread to Tables and Salami to Salads ONEzoo has the supplier for you. You can see list prices, message them and negotiate down a better price then order. After this you can download our app and to order faster than a phone call. Not to mention plenty of reporting and integrations.</p>
-							<a href="#">Findout More...</a>
-						</div>
-					</div>
-
-					<div class="col-lg-6 offset-lg-1 text-right">
-						<img class="img-fluid rounded-circle" src="assets/img/customers.jpg" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End of Single How -->
-
-		<!-- Single How -->
-		<div class="single-how-inner style-2">
-			<div class="container-fluid">
-				<div class="row align-items-center">
-					<div class="col-lg-6">
-						<img class="img-fluid rounded-circle" src="assets/img/suppliers.jpg" alt="">
-					</div>
-
-					<div class="col-lg-5 offset-lg-1">
-						<div class="single-how zoo">
-							<h2 class="how-title yellow"><img src="assets/img/icons/suplier-2.png" alt=""> Suppliers</h2>
-							<h2>Order from a Collection of Australia's Best Suppliers.</h2>
-							<p>From Bread to Tables and Salami to Salads ONEzoo has the supplier for you. You can see list prices, message them and negotiate down a better price then order. After this you can download our app and to order faster than a phone call. Not to mention plenty of reporting and integrations.</p>
-							<a href="#">Findout More...</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End of Single How -->
-
-		<!-- Single How -->
-		<div class="single-how-inner style-2">
-			<div class="container-fluid">
-				<div class="row align-items-center">
-					<div class="col-lg-5 reverse-col">
-						<div class="single-how zoo">
-							<h2 class="how-title green"><img src="assets/img/icons/group-2.png" alt=""> Groups</h2>
-							<h2>Empower your venues</h2>
-							<p>Give venues under your control a custom interface to order from, restrict the suppliers they see and put reporting systems such as rebates and discounts in place.</p>
-							<a href="#">Findout More...</a>
-						</div>
-					</div>
-
-					<div class="col-lg-6 offset-lg-1 text-right">
-						<img class="img-fluid rounded-circle" src="assets/img/groups.jpg" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End of Single How -->
-
-		<!-- Single How -->
-		<div class="single-how-inner style-2">
-			<div class="container-fluid">
-				<div class="row align-items-center">
-					<div class="col-lg-6">
-						<img class="img-fluid rounded-circle" src="assets/img/brands.jpg" alt="">
-					</div>
-
-					<div class="col-lg-5 offset-lg-1">
-						<div class="single-how zoo">
-							<h2 class="how-title purple"><img src="assets/img/icons/brand-2.png" alt=""> Brands</h2>
-							<h2>Showcase your product</h2>
-							<p>By partnering with supplier you can link your brand to their success. See how your products are performing and boost sales with targeted ads.</p>
-							<a href="#">Findout More...</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End of Single How -->
-		
+	<!-- How Work Area -->	
+	<section class="section-padding pb-sm-0" id="learnMore">		
 		<!-- Single How -->
 		<div class="single-how-inner style-2">
 			<div class="container-fluid">
@@ -264,20 +153,103 @@
 					<div class="col-lg-5 reverse-col">
 						<div class="single-how zoo">
 							<h2 class="how-title navyblue"><img src="assets/img/icons/one.png" alt="Hospitality"> Corporate Catering</h2>
-							<h2>sell or buy corporate catering on OneZoo</h2>
+							<h2>Sell or buy corporate catering on OneZoo</h2>
 							<p>Get your venue's products in front of thousands of businesses ready for Grand Final, Melbourne Cup and the festive season. If you want to sell or if you're looking to buy corporate catering follow the link to.</p>
 							<a href="#">Findout More...</a>
 						</div>
 					</div>
 
 					<div class="col-lg-6 offset-lg-1 text-right">
-						<img class="img-fluid rounded-circle" src="assets/img/hospitality-img.jpg" alt="Hospitality">
+						<img class="img-fluid" src="assets/img/onezoo-badge.png" alt="Hospitality">
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- End of Single How -->
-		
+
+		<!-- Single How -->
+		<div class="single-how-inner style-2">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<img class="img-fluid rounded-circle" src="assets/img/customers.jpg" alt="">
+					</div>
+
+					<div class="col-lg-5 offset-lg-1">
+						<div class="single-how zoo">
+							<h2 class="how-title blue"><img src="assets/img/icons/customer.png" alt=""> Customers</h2>
+							<h2>Order from a Collection of Australia's Best Suppliers.</h2>
+							<p>From Bread to Tables and Salami to Salads ONEzoo has the supplier for you. You can see list prices, message them and negotiate down a better price then order. After this you can download our app and to order faster than a phone call. Not to mention plenty of reporting and integrations.</p>
+							<a href="#">Findout More...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Single How -->
+
+		<!-- Single How -->
+		<div class="single-how-inner style-2">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-lg-5 reverse-col">
+						<div class="single-how zoo">
+							<h2 class="how-title yellow"><img src="assets/img/icons/suplier-2.png" alt=""> Suppliers</h2>
+							<h2>Order from a Collection of Australia's Best Suppliers.</h2>
+							<p>From Bread to Tables and Salami to Salads ONEzoo has the supplier for you. You can see list prices, message them and negotiate down a better price then order. After this you can download our app and to order faster than a phone call. Not to mention plenty of reporting and integrations.</p>
+							<a href="#">Findout More...</a>
+						</div>
+					</div>
+
+					<div class="col-lg-6 offset-lg-1 text-right">
+						<img class="img-fluid rounded-circle" src="assets/img/suppliers.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Single How -->
+
+		<!-- Single How -->
+		<div class="single-how-inner style-2">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<img class="img-fluid rounded-circle" src="assets/img/groups.jpg" alt="">
+					</div>
+
+					<div class="col-lg-5 offset-lg-1">
+						<div class="single-how zoo">
+							<h2 class="how-title green"><img src="assets/img/icons/group-2.png" alt=""> Groups</h2>
+							<h2>Empower your venues</h2>
+							<p>Give venues under your control a custom interface to order from, restrict the suppliers they see and put reporting systems such as rebates and discounts in place.</p>
+							<a href="#">Findout More...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Single How -->	
+
+		<!-- Single How -->
+		<div class="single-how-inner style-2">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-lg-5 reverse-col">
+						<div class="single-how zoo">
+							<h2 class="how-title purple"><img src="assets/img/icons/brand-2.png" alt=""> Brands</h2>
+							<h2>Showcase your product</h2>
+							<p>By partnering with supplier you can link your brand to their success. See how your products are performing and boost sales with targeted ads.</p>
+							<a href="#">Findout More...</a>
+						</div>
+					</div>
+
+					<div class="col-lg-6 offset-lg-1 text-right">
+						<img class="img-fluid rounded-circle" src="assets/img/brands.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Single How -->	
 	</section>
 	<!-- End of How Work Area -->
 
@@ -585,8 +557,8 @@
 					<h4>Get in touch</h4>
 					<p>Lorem ipsum dolor sit amet consectetur.</p>
 					<ul class="contact-menu">
-						<li><a href="#"><i class="fa fa-phone"></i>+88 01XXX XXX XXX</a></li>
-						<li><a href="#"><i class="fa fa-envelope-o"></i>support@domain.com</a></li>
+						<li><a href="#"><i class="fa fa-phone"></i>0434201204</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i>support@onezoo.com</a></li>
 					</ul>
 					<ul class="app-link">
 						<li><a href="#"><img src="assets/img/play-stor.png" alt=""></a></li>
@@ -603,13 +575,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<p class="copyright">&copy; <span id="date">
+					<p class="copyright">&copy; <span id="date"></span>
 						<script>
 							var d = new Date();
 							var $date = d.getFullYear();
 							document.getElementById("date").innerHTML = $date;
 						</script>
-						OneZoo. Ltd.
+						Earthlings Pty Ltd
 					</p>
 				</div>
 			</div>
@@ -617,21 +589,8 @@
 	</div>
 	<!-- End of Footer Bottom Area -->
 
-	<!-- Popper JS -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<!-- Bootstrap JS -->
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<!-- Owl-Carousel JS -->
-	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-	<!-- SlickNav JS -->
-	<script type="text/javascript" src="assets/js/jquery.slicknav.min.js"></script>
-	<!-- Slick Slider JS -->
-	<script type="text/javascript" src="assets/js/slick.min.js"></script>
-	<script type="text/javascript" src="assets/js/slick-read-more.js"></script>
-	<!-- WOW JS -->
-	<script type="text/javascript" src="assets/js/wow.min.js"></script>
-	<!-- Magnigic-Popup JS -->
-	<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Vendor JS -->
+	<script type="text/javascript" src="assets/js/vendor.min.js"></script>
 	<!-- Send-mail -->
 	<script type="text/javascript" src="assets/js/send-mail.js"></script>
 	<!-- Custom Scripts -->

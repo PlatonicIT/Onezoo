@@ -488,7 +488,7 @@ input, textarea, button[type=submit] {
 }
 
 .contact-popup ul a:hover {
-    color: #0b9c59;
+    color: #185179;
 }
 
 .top-call-to .boxed-btn {
@@ -566,6 +566,76 @@ input, textarea, button[type=submit] {
     opacity: 1;
 }
 
+.search-box input, button[type=submit] {
+    padding: 13px 25px;
+    border: 1px solid rgba(0,0,0,0.5);
+    font-size: 17px;
+    border-radius: 1px;
+    background: transparent;
+}
+
+.search-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+
+.search-inner input {
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.search-inner button {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.search-inner input, .search-inner button {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.search-inner button.button {
+    border-color: #fff;
+    border-left: 0 none;
+    border-top-right-radius: 3px;
+    z-index: 0;
+    border-bottom-right-radius: 3px;
+    color: #1d2929;
+    background-color: #fff;
+}
+
+.search-inner ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 0.8; /* Firefox */
+}
+
+.search-inner :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+.search-inner ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+}
+
+.search-inner input:focus {
+    border-color: #185179;
+}
+
+.search-inner button.button:hover {
+    background-color: #185179;
+    border-color: #185179;
+    color: #fff;
+}
+
 /**
 * ===================================
 * = 03. Navigation CSS
@@ -611,7 +681,6 @@ input, textarea, button[type=submit] {
 .main-menu li {
     display: inline-block;
     position: relative;
-    border-bottom: 2px solid transparent;
 }
 
 .main-menu li.is-active {
@@ -723,17 +792,37 @@ input, textarea, button[type=submit] {
     position: unset;
 }
 
-.main-menu li.has-children::after, .main-nav li.has-children::after {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 10px;
-    height: 100%;
+.main-menu li.has-children > a::after, .main-nav li.has-children > a::after {
     color: #fff;
     font-family: FontAwesome;
     content: "\f0d7";
-    transform: translate(0, -50%);
-    line-height: 3.5;
+    opacity: 0.5;
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-menu li.has-children:hover > a::after {
+    padding-left: 0;
+    padding-right: 5px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.main-menu li.has-children .has-children > a::after, .main-nav li.has-children .has-children > a::after {
+    color: currentColor;
+    float: right;
+    content: "\f105";
+    font-family: FontAwesome;
+    padding: 0;
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
 }
 
 .main-nav ul li.has-children.nav-opened > ul {
@@ -860,7 +949,6 @@ input, textarea, button[type=submit] {
 }
 
 .mobile-nav {
-    /* padding: 12px 0; */
     height: auto!important;  	
 }
 
@@ -1021,10 +1109,14 @@ input, textarea, button[type=submit] {
     z-index: 3;
     overflow: hidden;
     background-attachment: fixed;
-    background-image: url(assets/img/hero-shape.png);
+    background-image: url('assets/img/hero-shape.png');
     background-color: #f2f2f2;
     background-size: 50%;
     background-repeat: no-repeat;
+}
+
+.hero-wrap.homepage {
+    background-image: url('assets/img/slides/slide-1.jpg');
 }
 
 .hero-wrap.hero-s2 img {
@@ -1428,6 +1520,7 @@ input, textarea, button[type=submit] {
 
 .tab-wrap {
     position: relative;
+    padding: 100px 0;
 }
 
 .tab-wrap .tab-pane {
