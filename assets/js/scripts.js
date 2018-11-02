@@ -132,14 +132,17 @@
             });
         }
 
-
-        // Typed JS
-        // ("#typed").typed({
-        //     strings: ["Heinz", "Tomato", "Italian", "Pizza"],
-        //     typeSpeed: 10,
-        //     loop:true,
-        //     backDelay: 2000,
-        // });
+        
+        //TypedJS-New
+        var typed = new Typed('#typed', {
+            strings: ['Heinz', 'Tomato', 'Italian', 'Pizza'],
+            typeSpeed: 80,
+            smartBackspace: true,
+            backSpeed: 80,
+            fadeOut: true,
+            loop: true
+        });
+        
 
 
         // Footer Responsive Men
