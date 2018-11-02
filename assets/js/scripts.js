@@ -133,6 +133,25 @@
         }
 
 
+        // Typed JS
+        // ("#typed").typed({
+        //     strings: ["Heinz", "Tomato", "Italian", "Pizza"],
+        //     typeSpeed: 10,
+        //     loop:true,
+        //     backDelay: 2000,
+        // });
+
+
+        // Footer Responsive Men
+        $(window).load(function() {
+            $('.footer-wrap h4').click(function() {
+                $(this).toggleClass('opened');
+                var myEm = $(this).attr('data-target');
+                $('.footer-menu[data-menu = '+myEm+']').toggleClass('opened');
+            });
+        });
+
+
         // Slick Nav Start
         $('#menu').slicknav({
             prependTo: '.mobile-menu'

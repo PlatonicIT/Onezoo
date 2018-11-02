@@ -636,6 +636,34 @@ input, textarea, button[type=submit] {
     color: #fff;
 }
 
+.typed-wrap {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 /**
 * ===================================
 * = 03. Navigation CSS
@@ -685,6 +713,10 @@ input, textarea, button[type=submit] {
 
 .main-menu li.is-active {
     border-bottom: 2px solid #4285f4;
+}
+
+.main-menu li.is-active .is-active {
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .main-menu li:first-child a, .navigation-wrap.sticky-menu .main-menu li:first-child a {
@@ -908,7 +940,7 @@ input, textarea, button[type=submit] {
     margin-right: -15px;
     padding: 13px;
     transition: all 0.3s;
-    height: 53px;
+    height: 54px;
 }
 
 .single-how-inner .rounded-circle {
@@ -1109,10 +1141,13 @@ input, textarea, button[type=submit] {
     z-index: 3;
     overflow: hidden;
     background-attachment: fixed;
-    background-image: url('assets/img/hero-shape.png');
     background-color: #f2f2f2;
     background-size: 50%;
     background-repeat: no-repeat;
+}
+
+.hero-wrap.animation {
+    background-image: url('assets/img/hero-shape.png');
 }
 
 .hero-wrap.homepage {
@@ -1323,6 +1358,29 @@ input, textarea, button[type=submit] {
 }
 
 
+/* Simple Hero */
+.hero-absolute-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ddd;
+    background-position: center center;
+}
+
+.hero-wrap.simple-hero {
+    padding: 130px 0 70px 0;
+    height: auto;
+}
+
+.hero-wrap.simple-hero .hero-inner {
+    padding-left: 70px;
+}
+
+
 /**
 * ===================================
 * = 05. About CSS
@@ -1394,7 +1452,36 @@ input, textarea, button[type=submit] {
     margin-top: 0;
 }
 
+/* CTA Style 2 */
+.cta-style-2 {
+    background-color: #4071d9;
+    color: #fff;
+    font-size: 22px;
+}
 
+.cta-style-2 h1, .cta-style-2 a {
+    color: inherit;
+}
+
+.cta-style-2 .button {
+    border: 2px solid;
+    font-size: 18px;
+}
+
+.cta-style-2 .button:hover {
+    border: 2px solid #185179;
+}
+
+.cta-style-2 h1 {
+    font-weight: 300;
+    font-size: 44px;
+}
+
+.cta-style-2 p {
+    opacity: 1;
+    padding: 20px 0;
+    font-weight: 100;
+}
 
 
 
@@ -1619,6 +1706,15 @@ input, textarea, button[type=submit] {
 
 .footer-menu {
     margin-top: 35px;
+    transition: max-height .3s cubic-bezier(0.4,0,.2,1);
+    -webkit-transition: max-height .3s cubic-bezier(0.4,0,.2,1);
+    -moz-transition: max-height .3s cubic-bezier(0.4,0,.2,1);
+    -ms-transition: max-height .3s cubic-bezier(0.4,0,.2,1);
+    -o-transition: max-height .3s cubic-bezier(0.4,0,.2,1);
+}
+
+.footer-menu.opened {
+    max-height: 100%;
 }
 
 h4+.footer-menu {
@@ -2358,4 +2454,24 @@ span.slicknav_menutxt {
 	padding: 20px 0;
 	font-size: 30px;
 	text-transform: capitalize;
+}
+.faq-contact {
+	color:#1d2929;
+}
+
+
+/* Services Style 2 */
+.services-wrap-s2 {
+    padding-bottom: 110px;
+}
+
+.single-service-s2 {
+    margin-bottom: 50px;
+}
+
+.single-service-s2 img, .single-service-s2 icon {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #185179;
+    max-width: 50px;
 }

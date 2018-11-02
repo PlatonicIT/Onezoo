@@ -204,6 +204,14 @@ MEDIAM LAYOUT : 1280px.
 =======================*/
 
 @media only screen and (max-width: 1200px) {
+
+    .hero-wrap.simple-hero .hero-inner {
+        padding-left: 30px;
+    }
+
+    .hero-wrap.simple-hero {
+        padding: 100px 0 60px 0;
+    }
     
     .footer-wrap .row > div {
         margin-bottom: 50px;
@@ -225,7 +233,7 @@ MEDIAM LAYOUT : 1280px.
         margin-bottom: 0;
     }
     .section-padding {
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
     }
     .quote-wrap h4 {
         font-size: 22px;
@@ -351,7 +359,7 @@ MEDIAM LAYOUT : 1280px.
     }
     
     .one-zoo-menu li a {
-        font-size: 13px;
+        font-size: 14px;
         padding: 10px 0;
     }
     
@@ -391,7 +399,20 @@ MEDIAM LAYOUT : 1280px.
     }
 }
 
-@media only screen and (max-width: 992px){    
+@media only screen and (max-width: 992px){   
+    
+    .single-how-inner .rounded-circle {
+        max-width: 550px;
+        display: block;
+    } 
+    
+    .single-how-inner .img-fluid {
+        margin: 0 auto;
+        display: block;
+    } 
+    .navigation-wrap .container-fluid, .navigation-wrap.style-2 .container-fluid {
+        max-width: 100%;
+    }
     .single-service {
         min-height: unset;
     }
@@ -479,11 +500,12 @@ MEDIAM LAYOUT : 1280px.
     }
     .header-wrap { display: none; }        
 
-    .mobile-nav { display: block; }  
+    .mobile-nav { display: block; } 
 
-    .navigation-wrap {
+    .navigation-wrap, .navigation-wrap.style-2 {
         background-color: #fff;
         box-shadow: 0 0 35px rgba(161, 161, 168, 0.34);
+        padding: 0;
     }
 
     .slicknav_menu .slicknav_btn {
@@ -536,6 +558,42 @@ SMALL MOBILE LAYOUT : 320px.
     }
 }
 @media only screen and (max-width: 767px) {
+    .footer-menu {
+        max-height: 0;
+        overflow: hidden;
+    }
+    .footer-wrap h4[data-target] {
+        border-bottom: 1px solid;
+        padding: 10px;
+        padding-left: 0;
+        position: relative;
+        cursor: pointer;
+    }
+    .footer-wrap h4[data-target]:after {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        height: 100%;
+        width: fit-content;
+        font-family: FontAwesome;
+        content: "\f0d7";
+        color: currentColor;
+        transform: translate(0, -50%);
+        padding: 10px;
+        padding-right: 0;
+    }
+    .footer-wrap h4.opened[data-target]:after {
+        top: 0;
+        padding-left: 0;
+        transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+}
+    .footer-wrap .row > div {
+        margin-bottom: 10px;
+    }
     .single-category img {
         max-width: 100px;
     }
@@ -967,11 +1025,28 @@ SMALL MOBILE LAYOUT : 320px.
     .tab-menu ul.nav li a {
         line-height: 2;
     }  
+
+    /* Simple Hero */
+    .hero-absolute-bg {
+        width: 100%;
+        position: relative;
+        height: 300px;
+        bottom: 0;
+        margin-top: 50px;
+    }
+    
+    .hero-wrap.simple-hero {
+        padding-bottom: 0;
+        padding-top: 85px;
+    }
 }
 /*========================
 Tablet LAYOUT: 768px.
 =========================*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {    
+@media only screen and (min-width: 768px) and (max-width: 1024px) {        
+    .single-how-inner .rounded-circle {
+        max-width: 100%;
+    }
     .hero-wrap.supplier {
         padding-top: 100px;
     }
@@ -979,7 +1054,6 @@ Tablet LAYOUT: 768px.
         max-width: 100%;
     }
     .single-how-inner .rounded-circle {
-        max-width: 550px;
         display: block;
         margin: 0 auto 30px;    
     }
@@ -1013,11 +1087,7 @@ Tablet LAYOUT: 768px.
     }
     
     .main-menu li a, .navigation-wrap.sticky-menu .main-menu li a {
-        padding: 10px 8px;
-    }
-    
-    .navigation-wrap {
-        padding: 15px 0;
+        padding: 10px 7px;
     }
 
     .hero-wrap {
@@ -1154,6 +1224,19 @@ Tablet LAYOUT: 768px.
     .quote-wrap.supplier h4 {
         opacity: 0.8;
     }
+    .cta-style-2 {
+        font-size: 20px;
+    }
+    .cta-style-2 .button {
+        font-size: 15px;
+    }
+    .cta-style-2 h1 {
+        font-size: 36px;
+    }
+    
+    .cta-style-2 p {
+        margin: 0 0 10px;
+    }
 }
 /*========================
 LARGE MOBILE LAYOUT: 480px.
@@ -1197,7 +1280,7 @@ LARGE MOBILE LAYOUT: 480px.
         padding-top: 50px;
     }
     .single-how-inner .rounded-circle {
-        max-width: 280px;
+        max-width: 320px;
     }
 }
 @media only screen and (max-width: 480px) {
