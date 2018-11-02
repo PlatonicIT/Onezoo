@@ -193,7 +193,8 @@ Large LAYOUT : 1280px.
         margin-right: 15px;
     }
     .one-zoo-menu li a {
-        padding: 10px 3px;
+        padding: 14px 3px;
+        font-size: 18px;
     }
     .login-menu li::before {
         top: 10px;
