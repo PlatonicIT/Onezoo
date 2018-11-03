@@ -189,6 +189,10 @@ Large LAYOUT : 1280px.
 
 
 @media only screen and (min-width: 1400px) and (max-width: 1500px) {
+    
+    .hero-wrap.customer {
+        padding-top: 0;
+    }
     .icon-menu li a {
         margin-right: 15px;
     }
