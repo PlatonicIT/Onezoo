@@ -135,7 +135,7 @@
         
         //TypedJS-New
         var typed = new Typed('#typed', {
-            strings: ['Heinz', 'Tomato', 'Italian', 'Pizza'],
+            strings: ['Heinz Sauce', 'Tomato Sauce', 'Italian Sauce', 'Pizza Sauce'],
             typeSpeed: 80,
             smartBackspace: true,
             backSpeed: 80,
