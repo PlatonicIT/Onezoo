@@ -8,8 +8,18 @@ Large LAYOUT : 1280px.
     .faq-wrap > .container-fluid {
         padding: 0;
     }
+    .hero-wrap.simple-hero .hero-inner {
+        padding-left: 40px;
+/*        margin-top: 115px;*/
+    }
 }
 @media only screen and (min-width: 1400px) {
+    
+    .hero-inner.simple-hero h1 {
+        font-size: 36px;
+        font-weight: 300;
+    }
+    
     .section-padding {
         padding: 140px 0;
     }
@@ -18,6 +28,24 @@ Large LAYOUT : 1280px.
     }   
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    /*    test*/
+    .hero-inner.simple-hero h1 {
+        font-size: 36px;
+    }
+    
+    .main-menu li a {
+        padding: 18px 12px;  
+    }
+    
+    .hero-wrap.simple-hero .hero-inner {
+        padding-left: 40px;
+        margin-top: 115px;
+    }
+    /*    test*/
+    
+    .hero-wrap.simple-hero .hero-inner {
+        padding-left: 40px;
+    }
     .quote-wrap h4 {
         font-size: 26px;
         line-height: 55px;
@@ -47,6 +75,10 @@ Large LAYOUT : 1280px.
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    .hero-wrap.simple-hero .hero-inner {
+        padding-left: 40px;
+    }
+
     .cta-wrap .single-img {
         margin-left: 0;
     }
@@ -70,6 +102,8 @@ Large LAYOUT : 1280px.
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    
+    
     .navigation-wrap.style-2 .logo {
         margin-right: 25px;
     }
@@ -150,6 +184,7 @@ Large LAYOUT : 1280px.
 
 
 @media only screen and (min-width: 992px) and (max-width: 1600px) {
+
     .hero-img {
         margin-right: -50px;
     }
@@ -175,15 +210,15 @@ Large LAYOUT : 1280px.
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px){
 	.login-menu li::before {
-    top: 10px;
-	}
+        top: 10px;
+    }
 	
 	.single-tes-slide{
 		padding: 20px 20px;
 	}
 	.navigation-wrap.style-2 {
-    padding: 10px 0;
-}
+        padding: 10px 0;
+    }
 	
 }
 
@@ -236,9 +271,6 @@ MEDIAM LAYOUT : 1280px.
     
     .vimeo-video {
         margin-bottom: 0;
-    }
-    .section-padding {
-        /* margin-bottom: 60px; */
     }
     .quote-wrap h4 {
         font-size: 22px;
@@ -516,7 +548,6 @@ MEDIAM LAYOUT : 1280px.
     .slicknav_menu .slicknav_btn {
         float: none;
         display: inline-block;
-        /* margin-bottom: 30px; */
     }
     
     .slicknav_menu {

@@ -1208,6 +1208,10 @@ input, textarea, button[type=submit] {
 }
 */
 
+.hero-inner.simple-hero h1 {
+    font-weight: 300;
+    }
+
 .hero-inner h1 {
     margin-bottom: 15px;
     font-size: 40px;
