@@ -472,6 +472,53 @@ input, textarea, button[type=submit] {
     color: #185179;
 }
 
+.contact-hover {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    border-bottom: 1px dashed #3980fb;
+}
+
+.contact-hover-popup {
+    border-bottom: 2px solid #185179;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    min-width: 300px;
+    padding: 20px;
+    position: absolute;
+    bottom: 100%;
+    z-index: 99;
+    background: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+    font-weight: normal;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.contact-hover-popup a {
+    display: block;
+    font-weight: normal;
+}
+
+.contact-hover-popup:before {
+    position: absolute;
+    left: 5%;
+    top: 100%;
+    border-top: 10px solid #185179;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    content: '';
+}
+
+.contact-hover:hover .contact-hover-popup, .contact-hover:focus .contact-hover-popup, .contact-hover.active .contact-hover-popup {
+    opacity: 1;
+    visibility: visible;
+}
+
 .top-call-to .boxed-btn {
     margin-right: 0;
 }
@@ -1362,6 +1409,19 @@ input, textarea, button[type=submit] {
     background-position: center center;
 }
 
+.hero-absolute-bg.inner-img {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.hero-absolute-bg.inner-img img {
+    max-height: 100%;    
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
 .hero-wrap.simple-hero {
     padding: 130px 0 70px 0;
     height: auto;
@@ -1460,7 +1520,9 @@ input, textarea, button[type=submit] {
 }
 
 .cta-style-2 .button:hover {
-    border: 2px solid #185179;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #4071d9;
 }
 
 .cta-style-2 h1 {
@@ -2464,6 +2526,9 @@ span.slicknav_menutxt {
 .single-service-s2 img, .single-service-s2 icon {
     margin-bottom: 20px;
     font-size: 50px;
-    color: #185179;
+    color: #ffc646;
     max-width: 50px;
+    background: #ffc646;
+    border-radius: 50%;
+    border: 1px solid;
 }
