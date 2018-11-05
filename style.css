@@ -17,25 +17,6 @@ Description: MyPort is a Responsive CV / Resume / V-Card / Personal Website / Po
 * = 01. Global CSS
 * ===================================
 */
-::selection {
-  background: #f7f7f7;
-  color: #185179;
-  text-shadow: none;
-}
-
-::-moz-selection {
-  background: #f7f7f7;
-  /* Firefox */
-  color: #185179;
-  text-shadow: none;
-}
-
-::-webkit-selection {
-  background: #f7f7f7;
-  /* Safari */
-  color: #185179;
-  text-shadow: none;
-}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -685,10 +666,6 @@ input, textarea, button[type=submit] {
     top: 0;
 }
 
-.navigation-wrap.sticky-menu .main-menu li a {
-    /* padding: 25px 20px; */
-}
-
 .main-menu li a {
     color: #fff;
     font-size: 17px;
@@ -866,6 +843,15 @@ input, textarea, button[type=submit] {
     left: 300px;
     top: 0;
     position: unset;
+}
+
+.main-menu ul li > ul li a {
+    padding: 3px 15px;
+    font-size: 80%;
+}
+
+.main-menu ul li > ul li ul {
+    margin-top: 0px;
 }
 
 
@@ -1781,6 +1767,7 @@ h4+.footer-menu {
     display: block;
     position: relative;
     padding-left: 25px;
+    word-break: break-all;
 }
 
 .contact-menu li i {
@@ -2384,7 +2371,7 @@ span.slicknav_menutxt {
     background-color: #be4165;
     color: #fff;
     display: block;
-    padding: 17px 60px;
+    padding: 14px 60px;
 }
 
 .cta-form > div {
