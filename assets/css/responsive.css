@@ -12,6 +12,9 @@ Large LAYOUT : 1280px.
         padding-left: 40px;
 /*        margin-top: 115px;*/
     }
+    .simple-single-how h1 {
+        font-size: 34px;
+    }
 }
 @media only screen and (min-width: 1400px) {
     
@@ -437,6 +440,10 @@ MEDIAM LAYOUT : 1280px.
 }
 
 @media only screen and (max-width: 992px){   
+
+    .simple-single-how {
+        margin-bottom: 50px;
+    }
     
     .single-how-inner .rounded-circle {
         max-width: 550px;
@@ -594,6 +601,9 @@ SMALL MOBILE LAYOUT : 320px.
     }
 }
 @media only screen and (max-width: 767px) {
+    .hero-absolute-bg.inner-img {
+        padding: 0;
+    }
     .footer-menu {
         max-height: 0;
         overflow: hidden;

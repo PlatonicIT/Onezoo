@@ -60,7 +60,7 @@
 
         //add active class on nav
         $('.main-menu ul').on('click', 'li',function(){
-            // $(this).addClass('is-active').siblings().removeClass('is-active');
+            $(this).addClass('is-active').siblings().removeClass('is-active');
         });
 
         $('#contact-btn, .contact-btn').on( 'click', function() {
@@ -73,18 +73,6 @@
         
         //Title for Icons
         $('[data-toggle="tooltip"]').tooltip();
-
-
-        // Backgrond Slider
-        // $('.slider-background').owlCarousel({
-        //     items: 1,
-        //     fade: true,
-        //     autoplay: true,
-        //     animateOut: 'fadeOut',
-        //     nav: true,
-        //     loop: true,
-        //     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
-        // });
         
 
         // Rendom Background Images
@@ -134,14 +122,16 @@
 
         
         //TypedJS-New
-        var typed = new Typed('#typed', {
-            strings: ['Heinz Sauce', 'Tomato Sauce', 'Italian Sauce', 'Pizza Sauce'],
-            typeSpeed: 80,
-            smartBackspace: true,
-            backSpeed: 80,
-            fadeOut: true,
-            loop: true
-        });
+        if(  $('#typed').length ) {
+            var typed = new Typed('#typed', {
+                strings: ['Heinz Sauce', 'Tomato Sauce', 'Italian Sauce', 'Pizza Sauce'],
+                typeSpeed: 80,
+                smartBackspace: true,
+                backSpeed: 80,
+                fadeOut: true,
+                loop: true
+            });
+        }
         
 
 
