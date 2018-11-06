@@ -33,6 +33,7 @@ body {
     font-weight: 300;
     line-height: 1.9;
     overflow-x: hidden;
+    counter-reset: my-sec-counter;
 }
 
 a:hover, a:focus {
@@ -2373,4 +2374,44 @@ span.slicknav_menutxt {
 
 .edge-wrap h1 {
     font-size: 30px;
+}
+
+
+
+/* Numbered Section */
+.single-numbered {
+    position: relative;
+    font-size: 15px;
+    padding-left: 65px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.numbered-wrap .col-md-4 {
+    counter-increment: my-sec-counter;
+}
+
+.single-numbered:before {
+    content: ""counter(my-sec-counter);
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: #4071d9;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+}
+
+.single-numbered h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.single-numbered p:last-child {
+    margin-bottom: 0;
 }
