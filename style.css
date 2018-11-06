@@ -1427,6 +1427,9 @@ input, textarea, button[type=submit] {
     margin-bottom: 0;
 }
 
+.simple-single-how {
+    margin-bottom: 30px;
+}
 
 .how-title.blue {
     color: #3980fb;
