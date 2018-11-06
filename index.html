@@ -23,28 +23,26 @@
 <body class="homepage">
 
 	<!-- Navigation Area -->
-	<nav class="navigation-wrap is-sticky home style-2">
+	<nav class="navigation-wrap nav-s2 is-sticky">
 		<div class="container-fluid">
-			<div class="row hide-in-sm">
-				<div class="col-lg-10">
+			<div class="row align-items-center">
+				<div class="col-sm-2 col-xs-4">
+					
 					<div class="logo">
 						<a href="index.html"><img src="assets/img/logo-2.png" alt=""></a>
 					</div>
-
-					<div class="icon-menu">
-						<ul>
-							<li>								
-								<div class="drop-down">
-									<a href="javascript:void(0);" class="menu-1"><img src="assets/img/icons/one.png" alt=""> Hospitality <i class="fa fa-caret-down"></i></a>
-									<div class="options options-1">
-										<ul>
-											<li><a href="customer.html"><img src="assets/img/icons/user.png" alt=""> Customer<span class="value">1</span></a></li>
-											<li><a href="supplier.html"><img src="assets/img/icons/suplier.png" alt=""> Supplier<span class="value">2</span></a></li>
-											<li><a href="groups.html"><img src="assets/img/icons/group.png" alt=""> Groups<span class="value">3</span></a></li>
-											<li><a href="brands.html"><img src="assets/img/icons/brand.png" alt=""> Brands<span class="value">3</span></a></li>
-										</ul>
-									</div>
-								</div>
+				</div>
+				<div class="col-8">
+					<div class="main-menu" id="main-nav">
+						<ul id="menu">
+							<li>
+							<a href="#"><img src="assets/img/icons/one.png" alt="">  Hospitality</a>
+								<ul>
+									<li><a href="customer.html"><img src="assets/img/icons/user.png" alt=""> Customer</a></li>
+									<li><a href="supplier.html"><img src="assets/img/icons/suplier.png" alt=""> Supplier</a></li>
+									<li><a href="groups.html"><img src="assets/img/icons/group.png" alt=""> Groups</a></li>
+									<li><a href="brands.html"><img src="assets/img/icons/brand.png" alt=""> Brands</a></li>
+								</ul>
 							</li>
 							<li><a href="customer.html"><img src="assets/img/icons/customer.png" alt=""> Customers</a></li>
 							<li><a href="supplier.html"><img src="assets/img/icons/suplier.png" alt=""> Suppliers</a></li>
@@ -53,9 +51,9 @@
 						</ul>
 					</div>
 				</div>
-				
-				<div class="col-lg-2 text-right">
-					<div class="one-zoo-menu">
+
+				<div class="col-2 text-right">
+					<div class="main-menu right-menu col-half-left">
 						<ul class="login-menu">
 							<li><a href="#">Sign In</a></li>
 							<li><a href="#">Help <img src="assets/img/icons/help.ico" alt=""></a></li>
@@ -64,67 +62,37 @@
 				</div>
 			</div>
 
-			<div class="mobile-nav">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="logo">
-							<a href="index.html"><img src="assets/img/logo-2.png" alt=""></a>
-						</div>
-
-						<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span></span>
-							<span></span>
-							<span></span>
-						</button>
-
-						<div class="navbar-collapse collapse" id="navbarSupportedContent">
-							<ul>
-								<li><a href="customer.html">Customers</a></li>
-								<li><a href="supplier.html">Suppliers</a></li>
-								<li><a href="groups.html">Group</a></li>
-								<li><a href="brands.html">Brand</a></li>
-								<li><a href="#">Support</a></li>
-								<li><a href="https://onezoo.com.au/login">Sign in</a></li>
-								<li><a href="https://onezoo.com.au/login">Create Account</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+			<!-- Mobile Navigation -->
+			<div class="row align-items-center mobile-only">
+				<div class="mobile-menu"></div>
 			</div>
+			<!-- End of Mobile Navigation -->
 		</div>
 	</nav>
 	<!-- End of Navigation Area -->
 
 	<!-- Hero Area -->
-	<section class="hero-wrap homepage hero-s2">
+	<section class="hero-wrap homepage-hero">
 		<!-- Rendom Background -->
 		<div class="slider-background">
 			<div class="single-slide-bg" id="slide-bg"></div>		
 		</div>
 		<!-- End of Rendom Background -->
 
-		<div class="content-table">
-			<div class="content-table-cell">
-				<div class="container-fluid">
-					<div class="row text-center">
-						<div class="col-md-12">
-							<div class="content-table">
-								<div class="content-table-cell">
-									<div class="hero-inner style-2">
-										<h1>Connecting the world's orders</h1>
-										<p>ONEzoo offers products tailored to a wide range of users, in a wide range of industries.</p>
-										<div class="search-box search-group">
-											<div class="search-inner">
-												<input type="search" name="s" id="search" placeholder="Search Here..">
-												<button type="submit" class="button boxed-btn"><i class="fa fa-search"></i></button>
-											</div>											
-											<h3 class="typed-wrap">
-												Search here for <span id="typed"></span>
-											</h3>
-										</div>
-									</div>
-								</div>
-							</div>
+		<div class="container-fluid">
+			<div class="row text-center align-items-center">
+				<div class="col-md-12">
+					<div class="hero-inner">
+						<h1>Connecting the world's orders</h1>
+						<p>ONEzoo offers products tailored to a wide range of users, in a wide range of industries.</p>
+						<div class="search-box search-group">
+							<div class="search-inner">
+								<input type="search" name="s" id="search" placeholder="Search Here..">
+								<button type="submit" class="button boxed-btn"><i class="fa fa-search"></i></button>
+							</div>											
+							<h3 class="typed-wrap">
+								Search here for <span id="typed"></span>
+							</h3>
 						</div>
 					</div>
 				</div>
@@ -137,14 +105,14 @@
 	
     <!--Vimeo Video-->
 	<section class="section-padding pb-0 vimeo-video">
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-               <iframe src="https://player.vimeo.com/video/181458063" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-               </iframe>               
-            </div>            
-        </div>
-    </div>        
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+				<iframe src="https://player.vimeo.com/video/181458063" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+				</iframe>               
+				</div>            
+			</div>
+		</div>        
 	</section>	
 	
 	<!-- How Work Area -->	

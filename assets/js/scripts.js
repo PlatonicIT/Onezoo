@@ -12,8 +12,7 @@
         $nav_link = $("#main-nav li a");
 
         function nav_handlr(e, a) {
-        var s = e;
-        !0 === (!0 === a || "open" === a || 1 === a) ? s.slideDown(600) : (s.slideUp(500), s.find("li.nav-opened").removeClass("nav-opened").children("ul").slideUp(300))
+            var s = e;
         }
 
         function mobileNav_handlr() {
@@ -113,10 +112,6 @@
                 myElement.css({
                     'opacity': 1 - st / 800,
                 });
-                myElement.parents().css({                        
-                    // 'height': hero_height - st,
-                    'background-position-y': 50 + st / 3.5
-                });
             });
         }
 
@@ -182,11 +177,30 @@
                       win = $(window);
                     
                   win.on("scroll", function() {
-                      win.scrollTop() >= pos ? sticky.addClass("sticky-menu") : sticky.removeClass("sticky-menu");      
+                    win.scrollTop() >= pos ? sticky.addClass("sticky-menu") : sticky.removeClass("sticky-menu");           
+                    
+                    if($(".navigation-wrap").hasClass('sticky-menu')) {
+                        var $height = $('.navigation-wrap').height();  
+                        $('.hero-wrap').css({                        
+                            'margin-top': $height
+                        });                          
+                        console.log($height); // For Debugging Height
+                    } else {
+                        $('.hero-wrap').css({                        
+                            'margin-top': '0'
+                        });
+                    }
                   });     
                 }
             }
-        }
+        } 
+
+        var $height = $('.navigation-wrap').height();                                  
+        $('.hero-wrap.homepage-hero').css({             
+            'height': 'calc(100vh -' + $height + ')',
+            'height': 'calc(100vh - '+$height+'px)'
+        }); 
+        console.log($height);
 
 
         // Testimonial Slider

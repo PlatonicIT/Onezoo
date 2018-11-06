@@ -10,10 +10,12 @@ Large LAYOUT : 1280px.
     }
     .hero-wrap.simple-hero .hero-inner {
         padding-left: 40px;
-/*        margin-top: 115px;*/
     }
     .simple-single-how h1 {
         font-size: 34px;
+    }
+    .hero-img {
+        right: 0;
     }
 }
 @media only screen and (min-width: 1400px) {
@@ -36,15 +38,9 @@ Large LAYOUT : 1280px.
         font-size: 36px;
     }
     
-    .main-menu li a {
-        padding: 18px 12px;  
-    }
-    
     .hero-wrap.simple-hero .hero-inner {
         padding-left: 40px;
-        margin-top: 115px;
     }
-    /*    test*/
     
     .hero-wrap.simple-hero .hero-inner {
         padding-left: 40px;
@@ -105,28 +101,7 @@ Large LAYOUT : 1280px.
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-    
-    
-    .navigation-wrap.style-2 .logo {
-        margin-right: 25px;
-    }
-    
-    .icon-menu li a {
-        padding: 5px 0;
-        margin-right: 10px;
-    }
-    
-    .icon-menu li a img {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .one-zoo-menu li a {
-        font-size: 16px;
-        padding: 9px 3px;
-    }
-
-    
+       
     .single-tes-slide {
         padding: 20px 15px;
         margin: 0 10px;
@@ -160,12 +135,6 @@ Large LAYOUT : 1280px.
         width: 70px;
         height: 70px;
     }
-    .navigation-wrap.style-2 .icon-menu {
-        margin-left: 40px;
-    }
-    .login-menu li::before {
-        top: 3px;
-    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -179,81 +148,36 @@ Large LAYOUT : 1280px.
     .tes-content:after {
         top: 66%;
         left: 75%;
-    }    
-    .icon-menu li a {
-        font-size: 15px;
-    }
+    }   
 }
 
 
 @media only screen and (min-width: 992px) and (max-width: 1600px) {
 
-    .hero-img {
-        margin-right: -50px;
-    }
-    .navigation-wrap.style-2 .icon-menu .drop-down > a::before {
-        top: 10px;
-    }
-    .navigation-wrap.style-2 .logo img {
-        max-width: 120px;
-    }
-    .navigation-wrap.style-2 .one-zoo-menu ul {
-        margin-left: 0;
-    }
-    .login-menu img {
-        max-width: 25px;
-    }
-    .icon-menu {
-        margin: 4px 0;
-    }
-    .icon-menu li a {
-        font-size: 17px;
-    }
+    
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px){
-	.login-menu li::before {
-        top: 10px;
-    }
 	
 	.single-tes-slide{
 		padding: 20px 20px;
 	}
-	.navigation-wrap.style-2 {
-        padding: 10px 0;
-    }
 	
 }
 
-
-@media only screen and (min-width: 1400px) and (max-width: 1500px) {
-    
-    .hero-wrap.customer {
-        padding-top: 0;
-    }
-    .icon-menu li a {
-        margin-right: 15px;
-    }
-    .one-zoo-menu li a {
-        padding: 14px 3px;
-        font-size: 18px;
-    }
-    .login-menu li::before {
-        top: 10px;
-    }
-}
 /*======================
 MEDIAM LAYOUT : 1280px.
 =======================*/
 
 @media only screen and (max-width: 1200px) {
 
-    .hero-wrap.simple-hero .hero-inner {
-        padding-left: 30px;
+    .hero-inner h1 {
+        margin-bottom: 20px;
+        font-size: 36px;
     }
 
-    .hero-wrap.simple-hero {
-        padding: 100px 0 60px 0;
+    .hero-wrap.simple-hero .hero-inner {
+        padding-left: 30px;
     }
     
     .footer-wrap .row > div {
@@ -283,9 +207,6 @@ MEDIAM LAYOUT : 1280px.
     .single-how h2 {
         font-size: 28px;
     }
-    .hero-wrap.hero-s2 .down-arrow-click {
-        bottom: 65px;
-    }
 
     .section-title {
         font-size: 40px;
@@ -293,6 +214,25 @@ MEDIAM LAYOUT : 1280px.
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navigation-wrap.nav-s2 .main-menu li a {
+        padding: 20px 3px;
+        font-size: 14px;
+    }
+
+    .navigation-wrap.nav-s2 .main-menu li img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .navigation-wrap.nav-s2 .login-menu li img {
+        width: 20px;
+        height: auto;
+    }
+
+    .navigation-wrap.nav-s2 .login-menu li a {
+        padding: 13px 2px;
+    }
+
     .container-fluid {
         max-width: 95%;
     }    
@@ -306,16 +246,8 @@ MEDIAM LAYOUT : 1280px.
         margin-right: 15px;;
     }
 
-    .main-menu li a {
-        padding: 18px 8px;
-    }
-
     .btn_search img {
         max-width: 30px;
-    }
-
-    .navigation-wrap.sticky-menu .main-menu li a {
-        padding: 25px 10px;
     }
 
     .single-service h2 {
@@ -357,9 +289,6 @@ MEDIAM LAYOUT : 1280px.
         font-size: 20px;
         padding: 15px 0;
     }
-    .login-menu li::before {
-        top: 4px;
-    }
     
     .meta {
         padding-left: 80px;
@@ -379,50 +308,7 @@ MEDIAM LAYOUT : 1280px.
         width: 70px;
         height: 70px;
     }
-
-    .navigation-wrap.style-2 .logo {
-        margin-right: 15px;
-    }
     
-    .icon-menu li a img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .icon-menu .drop-down {
-        padding-right: 5px;
-    }
-    
-    .icon-menu li a {
-        margin-right: 8px;
-        font-size: 15px;
-    }
-    
-    .one-zoo-menu li a {
-        font-size: 14px;
-        padding: 10px 0;
-    }
-    
-    .navigation-wrap.style-2 .icon-menu {
-        margin: 4px 0;
-        margin-left: 10px;
-    }
-    
-    .navigation-wrap.style-2 .logo img {
-        max-width: 100px;
-    }
-
-    .login-menu img {
-        max-width: 20px;
-    }
-    
-    .login-menu li::before {
-        left: 0;
-        top: 4px;
-    }
-    .login-menu li {
-        padding-left: 7px;
-    }
     .tab-wrap .tab-pane {
         left: auto;
         padding: 40px 40px;
@@ -439,7 +325,54 @@ MEDIAM LAYOUT : 1280px.
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1600px) {
+    .hero-inner-new h1 {
+        font-size: 36px;
+    }
+}
+
 @media only screen and (max-width: 992px){   
+    .navigation-wrap {
+        padding: 5px 0;
+        background-color: #fff;
+    }    
+    .navigation-wrap .container-fluid {
+        max-width: 100%;
+    }
+    .cta-style-2 h1 {
+        font-size: 30px;
+    }
+    .mobile-only {
+        display: block!important;
+    }
+    .row.mobile-only {
+        display: flex!important;
+    }
+    .main-menu { display: none; }
+    .mobile-menu { 
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .hero-wrap {
+        padding: 50px 0;
+    }
+    .hero-wrap.animation {
+        background-image: none;
+    }
+    .hero-img {
+        position: inherit;
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .hero-img img {
+        transform: translate(0);
+        position: inherit;
+    }
 
     .simple-single-how {
         margin-bottom: 50px;
@@ -454,9 +387,6 @@ MEDIAM LAYOUT : 1280px.
         margin: 0 auto;
         display: block;
     } 
-    .navigation-wrap .container-fluid, .navigation-wrap.style-2 .container-fluid {
-        max-width: 100%;
-    }
     .single-service {
         min-height: unset;
     }
@@ -488,9 +418,7 @@ MEDIAM LAYOUT : 1280px.
         border: none;
         padding-right: 0;
     }
-    .hero-inner img {
-        margin-top: 30px;
-    }
+    
     .how-content img {
         max-width: 50px;
     }
@@ -502,15 +430,6 @@ MEDIAM LAYOUT : 1280px.
     }
     .quote-wrap h4 {
         font-size: 20px;
-    }
-    .hero-wrap {
-        background-position: right top;
-    }
-    .navigation-wrap.style-2 .container-fluid > .row {
-        display: none;
-    }
-    .navigation-wrap.style-2 .container-fluid > .mobile-nav {
-        display: block;
     }
     .suppiler-work .how-content, .suppiler-work .how-content.left {
         padding-right: 0;
@@ -542,43 +461,7 @@ MEDIAM LAYOUT : 1280px.
     .hide-in-sm {
         display: none;
     }
-    .header-wrap { display: none; }        
-
-    .mobile-nav { display: block; } 
-
-    .navigation-wrap, .navigation-wrap.style-2 {
-        background-color: #fff;
-        box-shadow: 0 0 35px rgba(161, 161, 168, 0.34);
-        padding: 0;
-    }
-
-    .slicknav_menu .slicknav_btn {
-        float: none;
-        display: inline-block;
-    }
-    
-    .slicknav_menu {
-        text-align: right;
-        background: transparent;
-    }
-
-    .slicknav_menu ul li {
-        display: block;
-        text-align: left;
-    }
-    
-    .slicknav_menu ul {
-        text-align: left;
-        background-color: #1d2929;
-    }
-
-    .slicknav_menu ul li a i {
-        display: none;
-    }
-
-    .slicknav_menu ul li > ul {
-        margin: 0;
-    }
+    .header-wrap { display: none; }    
 
     .icon--search {
         color: #000;
@@ -590,19 +473,19 @@ SMALL MOBILE LAYOUT : 320px.
 =====================*/
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .mobile-nav .logo {
-        margin: 6px 0;
-    }
-
     .reverse-col {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
          order: 2;
     }
+    
+    .hero-wrap.homepage-hero .hero-inner h1 {
+        font-size: 40px;
+    }
 }
 @media only screen and (max-width: 767px) {
     .hero-absolute-bg.inner-img {
-        padding: 0;
+        padding: 20px 0;
     }
     .footer-menu {
         max-height: 0;
@@ -678,22 +561,6 @@ SMALL MOBILE LAYOUT : 320px.
     .navigation-wrap .container {
         max-width: 100%;
     }
-    .hero-wrap.customer {
-        padding-top: 50px;
-    }
-    .navigation-wrap.style-2 {
-        padding: 0;
-    }
-    .main-menu { display: none; }
-    .mobile-menu { 
-        display: block;
-        float: right;
-    }
-    .main-menu.right-menu { display: block; }
-
-    .main-menu.right-menu {
-        float: left;
-    }
 
     .section-title.with-border h2 {
         font-size: 20px;
@@ -734,27 +601,9 @@ SMALL MOBILE LAYOUT : 320px.
         margin-left: -12.5px;
     }
 
-    .logo {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    
-    .main-menu.right-menu li a, .navigation-wrap.sticky-menu .main-menu.right-menu li a {
-        padding: 15px 15px;
-    }
-    
-    .main-menu.right-menu {
-        text-align: left;
-    }
-
     .group-button img {
         margin-bottom: 15px;
         margin-right: 0;
-    }
-
-    .hero-wrap { 
-        height: auto; padding-bottom: 50px; background-attachment: unset;
-        background-position-y: -50px;
     }
 
     .header-wrap .logo {
@@ -770,7 +619,7 @@ SMALL MOBILE LAYOUT : 320px.
     }
 
     .hero-inner h1 {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 15px;
     }
 
@@ -782,11 +631,7 @@ SMALL MOBILE LAYOUT : 320px.
         font-size: 14px;
         line-height: 2;
         margin-bottom: 25px;
-    }
-    
-    .hero-inner {
-        padding: 44px 0 0;
-    }    
+    } 
     
     .hero-inner .group-button .button {
         margin: 0;
@@ -1008,12 +853,6 @@ SMALL MOBILE LAYOUT : 320px.
         height: 70px;
     }
 
-    .navigation-wrap.style-2 .logo {
-        margin-right: 0;
-        max-width: 200px;
-        margin: 6px 0;
-    }
-
     .select-menu img, .drop-down .options ul li img {
         margin-top: 0!important;
     }
@@ -1027,13 +866,6 @@ SMALL MOBILE LAYOUT : 320px.
 
     .padding-bottom-0 {
         padding-bottom: 0;
-    }
-
-    .hero-wrap::after {
-        width: 100%;
-        right: -30%;
-        top: 0%;
-        opacity: 0.1;
     }
     .single-how .absolute-col {
         position: relative;
@@ -1080,11 +912,6 @@ SMALL MOBILE LAYOUT : 320px.
         bottom: 0;
         margin-top: 50px;
     }
-    
-    .hero-wrap.simple-hero {
-        padding-bottom: 0;
-        padding-top: 85px;
-    }
 }
 /*========================
 Tablet LAYOUT: 768px.
@@ -1092,9 +919,6 @@ Tablet LAYOUT: 768px.
 @media only screen and (min-width: 768px) and (max-width: 1024px) {        
     .single-how-inner .rounded-circle {
         max-width: 100%;
-    }
-    .hero-wrap.supplier {
-        padding-top: 100px;
     }
     .single-how .absolute-col img {
         max-width: 100%;
@@ -1117,27 +941,14 @@ Tablet LAYOUT: 768px.
     }
 
     .hero-inner .group-button .button {
-        margin-bottom: 15px;
         margin-right: 10px;
         font-size: 16px;
         padding: 7px 27px;
         min-width: 175px;
     }
 
-    .main-menu {
-        text-align: center;
-    }
-
     .padding-bottom-0 {
         padding-bottom: 50px;
-    }
-    
-    .main-menu li a, .navigation-wrap.sticky-menu .main-menu li a {
-        padding: 10px 7px;
-    }
-
-    .hero-wrap {
-        height: 600px;
     }
 
     .hero-inner p {
@@ -1213,33 +1024,7 @@ Tablet LAYOUT: 768px.
     .group-button img:last-child {
         margin-right: 0;
     }
-
-    .navigation-wrap.style-2 .logo {
-        margin-right: 10px;
-    }
     
-    .icon-menu li a img {
-        max-width: 30px;
-    }
-    
-    .icon-menu li a {
-        margin-right: 8px;
-        font-size: 15px;
-    }
-    
-    .one-zoo-menu li a {
-        font-size: 12px;
-        padding: 10px 0;
-    }
-    
-    .navigation-wrap.style-2 .icon-menu {
-        margin: 3px 0;
-        float: right;
-    }
-
-    .navigation-wrap.style-2 .text-right {
-        text-align: center!important;
-    }
     .vimeo-video iframe {
         height: 400px;
     }
@@ -1254,15 +1039,20 @@ Tablet LAYOUT: 768px.
 
 
 @media only screen and (max-width: 767px){
-	.hero-inner img {
-        margin-top: 20px;
+    
+    .hero-inner-new h1 {
+        font-size: 24px;
     }
-    .down-arrow-click {
-        bottom: 30px;
+
+    .hero-wrap.homepage-hero .hero-inner {
+        text-align: left;
     }
-    .mobile-nav .logo {
-        margin: 9px 0;
+    
+    .hero-wrap.homepage-hero .hero-inner h1 {
+        font-size: 34px;
+        margin-bottom: 20px;
     }
+    
     .single-how .absolute-col img {
         max-width: 500px;
     }
@@ -1275,9 +1065,6 @@ Tablet LAYOUT: 768px.
     }
     .cta-style-2 .button {
         font-size: 15px;
-    }
-    .cta-style-2 h1 {
-        font-size: 36px;
     }
     
     .cta-style-2 p {
@@ -1294,10 +1081,6 @@ LARGE MOBILE LAYOUT: 480px.
     
     .quote-wrap h2 {
         margin-top: 30px;
-    }
-
-    .navigation-wrap.style-2 .logo {
-        max-width: 140px;
     }
     .single-how .absolute-col img {
         max-width: 75%;;
@@ -1334,13 +1117,6 @@ LARGE MOBILE LAYOUT: 480px.
         margin-left: 0;
         width: 100%;
     }
-    .main-menu.right-menu, .mobile-menu {
-        
-        text-align: center;
-    }
-    .slicknav_menu {
-        text-align: center;
-    }
     .single-how h2 {
         font-size: 24px;
     }
@@ -1358,16 +1134,6 @@ LARGE MOBILE LAYOUT: 480px.
 }
 
 @media only screen and (max-width: 400px){
-    .main-menu.right-menu li a, .navigation-wrap.sticky-menu .main-menu.right-menu li a {
-        padding: 8px 5px;
-    }
-    .main-menu li a {
-        font-size:15px;
-    }
-    .icons a {
-        padding: 11px 3px;
-        margin-right: 5px;
-    }
     .tab-content {
         padding-left: 40px;
     }
@@ -1380,23 +1146,11 @@ LARGE MOBILE LAYOUT: 480px.
     }
 }
 @media only screen and (max-width: 360px){
-    .main-menu.right-menu li a, .navigation-wrap.sticky-menu .main-menu.right-menu li a {
-        padding: 15px 5px;
-    }
     .meta > img {
         display: none;
-    }
-    .icons a {
-        margin-right: 2px;
-    }
-    .mobile-nav .logo {
-        max-width: 56%;
     }
     .hero-inner .group-button .button {
         min-width: 180px;
         margin-bottom: 10px;
-    }
-    .icons a {
-        width: 35px;
     }
 }

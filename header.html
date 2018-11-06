@@ -20,101 +20,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">	
 	<!-- Responsive CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    
-    <style>
-        h1 {
-            line-height: 1.4;
-        }
-        .hero-wrap-new {
-            padding: 100px 0;
-            position: relative;
-            background-color: #f2f2f2;
-            overflow: hidden;
-        }
-        .navigation-wrap, .navigation-wrap.style-2 {
-            position: relative;
-        }
-        .hero-inner-new > img {
-            margin-bottom: 10px;
-        }
-        .hero-inner-new h1 {
-            margin-bottom: 20px;
-        }
-        .hero-inner-new .group-button {
-            margin-top: 20px;
-        }
-        .hero-inner-new .group-button .button {
-            margin-bottom: 0;
-        }
-        .hero-inner-new .group-button .button+.button {
-            margin-top: 10px;
-        }
-        .hero-img-new {
-            position: absolute;
-            right: 8%;
-            top: 0;
-            /* height: calc(100% - 50px); */
-            height: 100%;
-            padding: 50px 0;
-            text-align: right;
-            width: 50%;
-        }
-
-        .hero-img-new img {
-            max-height: 100%;    
-            top: 50%;
-            transform: translate(0, -50%);
-            position: relative;
-        }
-
-        .down-arrow-new {
-            position: absolute;
-            transition: 1s;
-            left: 50%;
-            margin-left: -20px;
-            width: 32px;
-            height: 32px;
-            background-image: url(assets/img/icons/down.png);
-            background-size: contain;
-        }
-
-        .down-arrow-click {
-            position: absolute;
-            left: 0;
-            bottom: 60px;
-            width: 100%;
-            text-align: center;
-            background-repeat: no-repeat;
-        }
-
-        @media only screen and (max-width: 1800px) {
-            .hero-img-new {
-                right: 0;
-            }
-        }
-
-        @media only screen and (max-width: 992px) {
-            .hero-wrap-new {
-                padding: 50px 0;
-            }
-            .hero-img-new {
-                position: inherit;
-                width: 95%;
-                margin: 0 auto;
-                text-align: center;
-            }
-            .hero-img-new img {
-                transform: translate(0);
-                position: inherit;
-            }
-        }
-
-        @media only screen and (max-width: 767px) {
-            .hero-inner-new h1 {
-                font-size: 24px;
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -176,10 +81,10 @@
 	<nav class="navigation-wrap is-sticky">
 		<div class="container-fluid">
 			<div class="row hide-in-sm">
-				<div class="col-lg-8  col-md-12">
+				<div class="col-lg-8 col-md-12">
 					<div class="main-menu" id="main-nav">
 						<ul id="menu">
-							<li class="is-active"><a href="#">Features</a>
+							<li><a href="#">Features</a>
 								<ul>										
 									<li><a href="./">Overview</a></li>
 									<li><a href="#">Customers</a>
@@ -232,12 +137,15 @@
 								</ul>
 							</li>
 							<li><a href="#">References</a></li>
+							<li class="mobile-only"><a href="support.onezoo.com.au">Support</a></li>
+							<li class="mobile-only"><a href="https://onezoo.com.au/login">Sign in</a></li>
+							<li class="mobile-only"><a href="https://onezoo.com.au/login">Create Account</a></li>
+							<li class="mobile-only"><a href="https://onezoo.com.au/login" class="button boxed-btn">Get Started</a></li>
 						</ul>
 					</div>
-					<!-- Mobile Menu -->
 				</div>
 
-				<div class="col-lg-4 text-right col-md-12">
+				<div class="col-lg-4 text-right">
 					<div class="main-menu right-menu col-half-left">
 						<ul>
 							<li><a href="https://onezoo.com.au/login">Sign in</a></li>
@@ -249,34 +157,43 @@
 							</a></li>
 						</ul>
 					</div>
-
-					<div class="mobile-menu col-half-right"></div>
 				</div>
 			</div>
+
+			<!-- Mobile Navigation -->
+			<div class="row align-items-center mobile-only">
+				<div class="col-6">
+					<a href="./" class="logo"><img src="assets/img/logo.png" alt="Logo"></a>
+				</div>
+
+				<div class="col-6 text-right">
+					<div class="icons">
+						<a href="#" class="contact-btn"><i class="fa fa-mobile"></i></a>
+						<a href="#" class="btn_search">
+							<svg class="icon icon--search">
+								<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="mobile-menu"></div>
+			</div>
+			<!-- End of Mobile Navigation -->
 		</div>
 	</nav>
 	<!-- End of Navigation Area -->
 
 	<!-- Hero Area -->
-	<section class="hero-wrap-new animation customer bg">
+	<section class="hero-wrap animation customer bg">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.3s" data-wow-offset="100">
-                    <div class="hero-inner-new">
+                    <div class="hero-inner">
                         <img src="assets/img/icons/one.png" alt="">
                         <h1>Save Time, Make Money with ONEzoo Marketplace</h1>
-                        <p>Order from all of your suppliers on one platform, seamlessly and easily, Earn 
-                            <span class="trigger">points
-                                <span class="my-tooltip">ONEzoo points are earned by ordering with suppliers you find on ONEzoo. These points can be redeemed at checkout or in future for third-party services.<br>
-                                    This may not be available to your existing suppliers, if it’s not available and you want it on, let us know and we'll contact them.
-                                </span>
-                            </span>
-                            and pay your own way with no credit card fees and most importantly connect with your suppliers by ONEzoo 
-                            <span class="trigger">Chat
-                                <span class="my-tooltip">ONEzoo Chat allows you to connect to your supplier in real time. If the supplier is unavailable we will send them emails to get back in contact with you asap. Make sure you have your notifications on in the settings to get alerts when they reply.</span>
-                            </span>
-                            to negotiate the best price for your business. If you want a hand getting set up, get in	
-                            <span class="contact-hover">contact</span> with us and well be happy to help.</p>
+                        <p>Order from all of your suppliers on one platform, seamlessly and easily, Earn points
+                            and pay your own way with no credit card fees and most importantly connect with your suppliers by ONEzoo Chat
+                            to negotiate the best price for your business. If you want a hand getting set up, get in contact with us and well be happy to help.</p>
                         <div class="group-button">
                             <a href="https://onezoo.com.au/login" class="button boxed-btn">Get started</a>
                             <a href="https://player.vimeo.com/video/181458063" class="button play-video">Watch video</a>
@@ -286,11 +203,11 @@
             </div>
         </div>
 
-        <div class="hero-img-new wow fadeInRight" data-wow-delay="0.3s" data-wow-offset="100">
+        <div class="hero-img wow fadeInRight" data-wow-delay="0.3s" data-wow-offset="100">
             <img src="assets/img/laptop-and-mobile-1.png" alt="">
         </div>
 
-		<a href="#about" class="down-arrow-click-new"><div class="down-arrow-new bounce"></div></a>
+		<a href="#about" class="down-arrow-click bounce"><div class="down-arrow"></div></a>
 	</section>
 	<!-- End of Hero Area -->
 
