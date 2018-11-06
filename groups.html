@@ -22,11 +22,57 @@
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
-<body>
+<body class="groups">
+	
+	<!-- Popup Get Started -->
+	<div class="modal fade" id="popupContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalCenterTitle">Get Started</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<form action="#">
+						<div class="form-group">
+							<label for="username">User Name:</label> 
+							<input id="username" name="username" placeholder="Username" type="text" class="form-control here">
+						</div>
+						<div class="form-group">
+							<label for="company">Company Name:</label> 
+							<input id="company" name="company" placeholder="Company Name" type="text" class="form-control here">
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone Number:</label> 
+							<input id="phone" name="phone" placeholder="Phone Number" type="tel" class="form-control here">
+						</div>
+						<div class="form-group">
+							<label for="office">Head Office</label> 
+							<input id="office" name="office" placeholder="Head office" type="text" class="form-control here">
+						</div>
+						<div class="form-group">
+							<label for="postcode">Post Code</label> 
+							<input id="postcode" name="postcode" placeholder="Postcode" type="text" class="form-control here">
+						</div> 
+						<div class="form-group">
+							<button name="submit" type="submit" class="button groups boxed-btn btn-block">Submit</button>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Close <i class="fa fa-close"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of Popup Get Started -->
+
 	<!-- Header Top -->
 	<header class="header-wrap empty-navigation">
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row align-items-center">
 				<div class="col-md-4">
 					<div class="row">
 						<div class="col-sm-12">
@@ -40,7 +86,7 @@
 				<div class="col-md-8 text-right">
 					<div class="top-call-to group-button wow fadeInRight">
 						<a id="contact-btn" href="javascript:void(0);" class="button groups">contact us</a>
-						<a href="#" class="button groups boxed-btn">Get started</a>
+						<a href="#" class="button groups boxed-btn" data-toggle="modal" data-target="#popupContact">Get started</a>
 
 						<!-- Action For Contact Us -->
 						<div class="contact-popup groups">
@@ -59,255 +105,115 @@
 	<!-- End of Header Top -->
 
 	<!-- Hero Area -->
-	<section class="hero-wrap groups animation bg">
-		<div class="content-table">
-			<div class="content-table-cell">
-				<div class="container-fluid">
-					<div class="row align-items-center">
-						<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s" data-wow-offset="100">
-                            <div class="hero-inner">
-                                <img src="assets/img/icons/one.png" alt="">
-                                <h1>Save Time, Make Money with ONEzoo</h1>
-                                <p>Groups on ONEzoo allows you to automate your venues ordering, compare suppliers and most importantly see live activity of your venues. All for FREE.</p>
-                                <div class="group-button groups">
-                                    <a href="#" class="button groups boxed-btn">Contact Us</a>
-                                </div>
-                            </div>
-						</div>
-		
-						<div class="col-md-6 text-right wow fadeInRight" data-wow-delay="0.3s" data-wow-offset="100">
-                            <div class="hero-img">
-                                <img src="assets/img/groups/AdobeStock_87805567.jpeg" alt="">
-                            </div>
+	<section class="hero-wrap simple-hero customer" >
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 offset-md-6 wow fadeInLeft" data-wow-delay="0.2s" data-wow-offset="100">
+					<div class="hero-inner">
+						<h1>Save Time, Make Money with ONEzoo</h1>
+						<p>Groups on ONEzoo allows you to automate your venues ordering, compare suppliers and most importantly see live activity of your venues. All for FREE.</p>
+						<div class="group-button groups">
+							<a href="#" class="button groups boxed-btn">Contact Us</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>		
-		<a href="#how_work" class="down-arrow-click"><div class="down-arrow bounce"></div></a>
+		
+        <div class="hero-absolute-bg" style="background-image: url('assets/img/groups/banner.jpg');"></div>
 	</section>
 	<!-- End of Hero Area -->
 	
 	<!-- Services Area -->
-    <section class="section-padding gray-bg">
-        <div class="container-fluid">
-			<div class="row single-category">
-				<div class="col-md-4 text-center">
-					<img src="assets/img/icons/Search-Icon.png" alt="Find Suppliers">
-					<h2>Find Suppliers</h2>
-					<p>With hundreds of suppliers Australia wide, you can find the supplier you need in minutes. From Chairs and Tables to Milk and Cookies, ONEzoo has the supplier you need. We can even load your existing suppliers up for you to order from.</p>
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="assets/img/icons/Wheel-02.png" alt="Restrictions">
-					<h2>Restrictions</h2>
-					<p>We can apply restrictions on the venues under your control. Don't want them to see new suppliers? Don't want them to adjust their product list? it’s not a problem we have it covered.</p>
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="assets/img/icons/Coart.png" alt="Reports and Rebates">
-					<h2>Reports and Rebates</h2>
-					<p>ONEzoo allows you to see reporting on your venues, giving you real-time insights. We can also set up rebates to your head offices from suppliers or venues under your control.</p>
-				</div>
-			</div>         
-        </div>
-    </section>
-<!-- End of Services Area -->
-	
-
-	<!-- How Work Area -->
-	<section class="section-margin section-padding how-work-wrap supplier-work" id="how_work">
-		<div class="container-fluid">
-			<!-- Single How -->
-			<div class="single-how">
-				<div class="row align-items-center">
-					<div class="col-md-6 reverse-col absolute-col">
-                        <div class="left-img">
-                            <img src="assets/img/groups/left-shape.png" alt="">
-                        </div>
-					</div>
-
-					<div class="col-md-6 offset-md-6">
-                        <div class="how-content ml-6">
-                            <img src="assets/img/groups/green-bell.png" alt="supplier">
-                            <h2>We Can Add Any Supplier You Want</h2>
-                            <p>You can choose from any of the suppliers we have on ONEzoo or we can add in your own.<br>
-                            </p>
-                        </div>
-					</div>
-				</div>
-			</div>
-			<!-- End of Single How -->
-		</div>
-	</section>
-    <!-- How Work Area -->
-
-	<!-- How Work Area -->
-	<section class="section-margin section-padding how-work-wrap supplier-work">
-		<div class="container-fluid">			
-			<!-- Single How -->
-			<div class="single-how">
-				<div class="row align-items-center">
-					<div class="col-md-6">
-                        <div class="how-content left mr-6">
-                            <img src="assets/img/groups/green-rec-icon.png" alt="supplier">
-                            <h2>Give Your Venues The Right Access</h2>
-                            <p>You can fully customise ONEzoo to fit your needs, you can allow your users to turn on and off; seeing new suppliers, adding products to their product list, managing users, changing address, payment methods and much more.</p>
-                        </div>
-					</div>
-
-					<div class="col-md-6 absolute-col right text-right">
-                        <div class="right-img">
-                            <img src="assets/img/groups/right-shape.png" alt="">
-                        </div>
-					</div>
-				</div>
-			</div>
-			<!-- End of Single How -->
-		</div>
-	</section>
-    <!-- How Work Area -->
-	
-	<!-- How Work Area -->
-	<section class="section-margin section-padding how-work-wrap supplier-work" id="how_work">
-		<div class="container-fluid">
-			<!-- Single How -->
-			<div class="single-how">
-				<div class="row align-items-center">
-					<div class="col-md-6 reverse-col absolute-col">
-                        <div class="left-img">
-                            <img src="assets/img/groups/left-shape.png" alt="">
-                        </div>
-					</div>
-
-					<div class="col-md-6 offset-md-6">
-                        <div class="how-content ml-6">
-                            <img src="assets/img/groups/green-bell.png" alt="supplier">
-                            <h2>Pay On Your Terms</h2>
-                            <p>ONEzoo allows you to get rebates from your venues and suppliers as well as pay via credit card or any another method of your choosing, such as EFT or Cash.<br>
-                            </p>
-                        </div>
-					</div>
-				</div>
-			</div>
-			<!-- End of Single How -->
-		</div>
-	</section>
-    <!-- How Work Area -->
-	
-	
-
-    <!-- Link Third Party -->
-    <section class="section-padding link-third bg-light">
-        <div class="container-fluid">
-            <!-- Section Title -->
-            <div class="row text-center justify-content-center">
-                <div class="col-lg-8">
-                    <h1 class="section-title zoo">Link your third party software</h1>
-                    <p class="subtitle">Save time and money with order automation. Automatically import orders straight into your accounting software.</p>
-                </div>
-            </div>
-            <!-- End of Section Title -->
-            
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <img src="assets/img/laptop-2.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Link Third Party -->
-    
-    <!-- Services Area -->
-    <section class="section-padding">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Single Services -->
-                <div class="col-lg-4">
-                    <div class="single-service">
-                        <h2>Users can login Web or via Our App</h2>
-                        <p>Your venues will be able to access your suppliers from all our service with the same login.</p>
-                    </div>
-                </div>
-                <!-- End of Single Services -->
-
-                <!-- Single Services -->
-                <div class="col-lg-4">
-                    <div class="single-service">
-                        <h2>Go Custom</h2>
-                        <p>We can customise our service to your brand, from your logo all the way to a fully custom app.</p>
-                    </div>
-                </div>
-                <!-- End of Single Services -->
-
-                <!-- Single Services -->
-                <div class="col-lg-4">
-                    <div class="single-service">
-                        <h2>Reporting</h2>
-                        <p>Get detailed reports on all your venues at the click of a button.</p>
-                    </div>
-                </div>
-                <!-- End of Single Services -->
-            </div>
-        </div>
-    </section>
-    <!-- End of Services Area -->
-
-    <!-- Quote Area -->
-    <section class="section-padding quote-wrap groups">
-        <div class="quote-bg bg" style="background-image: url('assets/img/quote-bg.jpg');"></div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 offset-md-6">
-                    <h1>A Perfect Platform</h1>
-                    <h4>We have found Orderpage’s to be the perfect platform to condense and simplify our ordering processes, making less work for us and more time to focus on our business and customers”</h4>
-                    <h2>-GNC FOODS</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-	<!-- End of Quote Area -->
-
-	<!-- FAQ Area -->
-	<section class="section-padding faq-wrap wow fadeInUp" data-wow-delay="0.3s" data-wow-offset="100">
-		<div class="container-fluid">
-			<!-- Section Title -->
-			<div class="row text-center">
-				<div class="col-md-12">
-					<h1 class="section-title">Frequently asked questions</h1>
-				</div>
-			</div>
-			<!-- End of Section Title -->
-
+	<section class="section-padding services-wrap-s2 bg-light __web-inspector-hide-shortcut__">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<div class="tab-wrap groups">
-						<div class="tab-menu">
-							<ul class="faq-tab nav" role="tablist">
-								<li><a data-toggle="tab" href="#faq1" role="tab" aria-controls="faq1" aria-selected="false">Will my customers see other network?</a></li> 
-								<li><a data-toggle="tab" href="#faq2" role="tab" aria-controls="faq2" class="active" aria-selected="true">How much with Orderpages cost me?</a></li> 
-								<li><a data-toggle="tab" href="#faq3" role="tab" aria-controls="faq3" aria-selected="false">How long will it take me to set up my customer list?</a></li> 
-							</ul>
-						</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="single-service-s2">
+						<img src="assets/img/icons/Search-Icon.png" alt="">
+						<h4>Find Suppliers</h4>
+						<p>With hundreds of suppliers Australia wide, you can find the supplier you need in minutes. From Chairs and Tables to Milk and Cookies, ONEzoo has the supplier you need. We can even load your existing suppliers up for you to order from.</p>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-sm-6">
+					<div class="single-service-s2">
+						<img src="assets/img/icons/Search-Icon.png" alt="">
+						<h4>Restrictions</h4>
+						<p>We can apply restrictions on the venues under your control. Don't want them to see new suppliers? Don't want them to adjust their product list? it’s not a problem we have it covered.</p>
+					</div>
+				</div>
 
-						<div class="tab-content" id="myTabContent">
-							<div class="tab-pane fade" id="faq1" role="tabpanel" aria-labelledby="faq1-tab">
-								<h2>Answer:</h2>
-								<p>Pricing will be dependent on what level of access you wish to have available on Orderlinks. We have a range of packages to suit all budgets.</p>
-							</div>
-							<div class="tab-pane fade show active" id="faq2" role="tabpanel" aria-labelledby="faq2-tab">
-								<h2>Answer:</h2>
-								<p>Pricing will be dependent on what level of access you wish to have available on Orderlinks. We have a range of packages to suit all budgets.</p>
-							</div>
-							<div class="tab-pane fade" id="faq3" role="tabpanel" aria-labelledby="faq3-tab">
-								<h2>Answer:</h2>
-								<p>Pricing will be dependent on what level of access you wish to have available on Orderlinks. We have a range of packages to suit all budgets.</p>
-							</div>
-						</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="single-service-s2">
+						<img src="assets/img/icons/Search-Icon.png" alt="">
+						<h4>Reports and Rebates</h4>
+						<p>ONEzoo allows you to see reporting on your venues, giving you real-time insights. We can also set up rebates to your head offices from suppliers or venues under your control.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>	
-	<!-- End of FAQ Area -->
+	</section>
+	<!-- End of Services Area -->	
+
+	<!-- Edge to Edge Area -->
+    <section class="section-padding edge-wrap bg" style="background-image: url('assets/img/edge-1.jpg');">
+        <div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-6 wow fadeInUp" data-wow-offset="100">
+                    <h2 class="with-border">Let Us Get You Started</h2>
+                    <h1>Ready to Give Your Group an Industry Leading Platform?</h1>
+					<p>Rapidly growing, heavily systemised or just need a hand getting on ONEzoo, we understand. We can get in contact and start the process for you</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Edge to Edge Area -->
+    
+    <!-- Numbered Section -->
+    <section class="numbered-wrap section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Ready to set yourself up? Let Go.</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="single-numbered">
+                        <h3>Sign Up</h3>
+                        <p>Signup(link: login page) to ONEzoo to get the ball rolling. This will be your master account, we will set up all your venues under this account. You will be able to add users and restrict the options available to venues.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="single-numbered">
+                        <h3>Contact</h3>
+                        <p>All good things come to those who wait. We will promptly get in touch and start the process. We have a system in place which allows up to get you up and running in hours. We can load up your current suppliers, or help you get access to our own.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="single-numbered">
+                        <h3>Face-to-Face</h3>
+                        <p>Our team will come in and speak to you, learning the nuances of your business. Here we can help and restrictions on the venues, how they will operate, linking to your accounting package and building reports.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Numbered Section -->
+
+	<!-- CTA Area -->
+	<section class="section-padding cta-style-2">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12 wow fadeInUp" data-wow-offset="100">
+					<h1>Ready to get Your Group On Board?</h1>
+					<p>We have successfully launched ONEzoo into groups Australia wide, lets get started together.</p>
+					<a class="button" href="#">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of CTA Area -->
 
 	<!-- Footer Area -->
 	<footer class="footer-wrap section-padding">
