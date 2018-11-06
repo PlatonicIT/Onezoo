@@ -27,6 +27,9 @@ Large LAYOUT : 1280px.
     
     .section-padding {
         padding: 140px 0;
+    }    
+    .services-wrap-s2 {
+        padding-bottom: 110px;
     }
     .container-fluid {
         max-width: 76%;

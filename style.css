@@ -29,7 +29,7 @@ Description: MyPort is a Responsive CV / Resume / V-Card / Personal Website / Po
 body {
     font-family: 'Poppins', sans-serif;
     color: #1d2929;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.9;
     overflow-x: hidden;
@@ -819,14 +819,19 @@ input, textarea, button[type=submit] {
     top: 0;
 }
 
-.main-menu li.is-active.has-children > a::before {
+.main-menu li.is-active > a::before {
     height: 2px;
     width: 100%;
     content: '';
     background: #4071d9;
     left: 0;
-    bottom: 0;
+    top: 100%;
+    margin-top: -1px;
     position: absolute;
+}
+
+.main-menu .has-children li.is-active a::before {
+    display: none;
 }
 
 .main-menu li.has-children > a {
@@ -895,6 +900,7 @@ input, textarea, button[type=submit] {
     color: inherit;
     border-radius: 0;
     font-weight: 400;
+    text-transform: capitalize;
     font-size: 16px;
 }
 
@@ -997,10 +1003,23 @@ input, textarea, button[type=submit] {
     margin-bottom: 0;
 }
 
+/* Supplier Page */
+.supplier .main-menu li.is-active > a::before {
+    background-color: #ffc646;
+}
+
+.supplier .slicknav_btn {
+    background-color: #ffc646;
+}
+
+.button.boxed-btn {
+    background-color: #ffc646;
+    border-color: #ffc646;
+}
+
 /* Navigatin Style 2 */
 .navigation-wrap.nav-s2 {
     background-color: #fff;
-    padding: 10px 0;
 }
 
 .navigation-wrap.nav-s2 .container-fluid .col {
@@ -1401,16 +1420,13 @@ input, textarea, button[type=submit] {
 
 .single-how p {
     margin-bottom: 40px;
-    line-height: 41px;
 }
 
 .right-img {
-    /* margin-right: -250px; */
     position: relative;
 }
 
 .left-img {
-    /* margin-left: -250px; */
     position: relative;
 }
 
@@ -2260,6 +2276,10 @@ span.slicknav_menutxt {
 .single-how .absolute-col.right {
     left: auto;
     right: 0;
+}
+
+.how-content {
+    text-align: justify;
 }
 
 .how-content img {

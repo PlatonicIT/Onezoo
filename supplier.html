@@ -21,7 +21,7 @@
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
-<body>
+<body class="supplier">
 
 	<div class="search-overlay"></div>
 			
@@ -80,18 +80,18 @@
 	<nav class="navigation-wrap is-sticky">
 		<div class="container-fluid">
 			<div class="row hide-in-sm">
-				<div class="col-lg-8  col-md-12">
-					<div class="main-menu">
+				<div class="col-lg-8 col-md-12">
+					<div class="main-menu" id="main-nav">
 						<ul id="menu">
-							<li class="is-active"><a href="#">Solutions <i class="fa fa-caret-down"></i></a>
-								<ul>
+							<li><a href="#">Solutions</a>
+								<ul>										
 									<li><a href="orderlinks.html">ORDERLINKS</a></li>
-									<li><a href="customapp.html">CUSTOM APP</a></li>
+									<li><a href="customapp.html">CUSTOM APP</a></li></li>
 								</ul>
 							</li>
 							<li><a href="#">Pricing</a></li>
 							<li><a href="#">Security</a></li>
-							<li><a href="#">Resources <i class="fa fa-caret-down"></i></a>
+							<li><a href="#">Resources</a>
 								<ul>
 									<li><a href="#">Marketplace</a></li>
 									<li><a href="#">Orderlinks</a></li>
@@ -108,16 +108,19 @@
 								</ul>
 							</li>
 							<li><a href="#">Support</a></li>
+							<li class="mobile-only"><a href="support.onezoo.com.au">Support</a></li>
+							<li class="mobile-only"><a href="https://onezoo.com.au/login">Sign in</a></li>
+							<li class="mobile-only"><a href="https://onezoo.com.au/login">Create Account</a></li>
+							<li class="mobile-only"><a href="https://onezoo.com.au/login" class="button boxed-btn">Get Started</a></li>
 						</ul>
 					</div>
-					<!-- <div class="mobile-menu"></div> -->
 				</div>
 
-				<div class="col-lg-4 text-right col-md-12">
+				<div class="col-lg-4 text-right">
 					<div class="main-menu right-menu col-half-left">
 						<ul>
-							<li><a href="#">Sign in</a></li>
-							<li><a href="#">Create Account</a></li>
+							<li><a href="https://onezoo.com.au/login">Sign in</a></li>
+							<li><a href="https://onezoo.com.au/login">Create Account</a></li>
 							<li><a href="#" class="btn_search">
 								<svg class="icon icon--search">
 									<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
@@ -125,113 +128,58 @@
 							</a></li>
 						</ul>
 					</div>
-
-					<div class="mobile-menu col-half-right"></div>
 				</div>
 			</div>
-            
-            <div class="mobile-nav supplier">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="logo">
-                            <a href="index.html"><img src="assets/img/supplier-logo.png" alt=""></a>
-                        </div>
 
-                        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
+			<!-- Mobile Navigation -->
+			<div class="row align-items-center mobile-only">
+				<div class="col-6">
+					<a href="./" class="logo"><img src="assets/img/logo.png" alt="Logo"></a>
+				</div>
 
-						<div class="icons">
-							<a href="#" class="contact-btn"><i class="fa fa-mobile"></i></a>
-							<a href="#" class="btn_search">
-								<svg class="icon icon--search">
-									<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-								</svg>
-							</a>
-						</div>
-
-                        <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
-                            <ul>
-                                <li><a href="#" class="dd dd-1">Features <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown ddi-1">
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="dd dd-2">Solutions <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown ddi-2">
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Security</a></li>
-                                <li><a href="#" class="dd dd-3">Resources <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown ddi-3">
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                        <li><a href="#">Dhowpdown Menu</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Support</a></li>
-                                <li><a href="#">Sign in</a></li>
-                                <li><a href="#">Create Account</a></li>
-								<li><a href="#" class="button supplier boxed-btn">Get Started</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+				<div class="col-6 text-right">
+					<div class="icons">
+						<a href="#" class="contact-btn"><i class="fa fa-mobile"></i></a>
+						<a href="#" class="btn_search">
+							<svg class="icon icon--search">
+								<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="mobile-menu supplier"></div>
+			</div>
+			<!-- End of Mobile Navigation -->
 		</div>
 	</nav>
 	<!-- End of Navigation Area -->
 
 	<!-- Hero Area -->
-	<section class="hero-wrap supplier animation bg">
-		<div class="content-table">
-			<div class="content-table-cell">
-				<div class="container-fluid">
-					<div class="row align-items-center">
-						<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s" data-wow-offset="100">
-							<div class="content-table">
-								<div class="content-table-cell">
-									<div class="hero-inner">
-										<img src="assets/img/icons/one.png" alt="">
-                                        <h1>ORDERLINKS</h1>
-                                        <p class="lead">Personalise and simplify your ordering process</p>
-										<p>Give your customers a beautiful interface to order on while streamlining your order process, linking your orders directly to your accounting platforms, CRM, Distribution Network and more.</p>
-										<div class="group-button supplier">
-											<a href="#" class="button supplier boxed-btn">Get started</a>
-											<a href="https://player.vimeo.com/video/181458063" class="button supplier play-video">Watch video</a>
-										</div>
-									</div>
-								</div>
-							</div>
+	<section class="hero-wrap animation customer bg">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.3s" data-wow-offset="100">
+                    <div class="hero-inner">
+						<img src="assets/img/icons/one.png" alt="">
+						<h1>ORDERLINKS</h1>
+						<p class="lead">Personalise and simplify your ordering process</p>
+						<p>Give your customers a beautiful interface to order on while streamlining your order process, linking your orders directly to your accounting platforms, CRM, Distribution Network and more.</p>
+						<div class="group-button supplier">
+							<a href="#" class="button supplier boxed-btn">Get started</a>
+							<a href="https://player.vimeo.com/video/181458063" class="button supplier play-video">Watch video</a>
 						</div>
-		
-						<div class="col-md-6 text-right wow fadeInRight" data-wow-delay="0.3s" data-wow-offset="100">
-							<div class="content-table">
-								<div class="content-table-cell">
-									<div class="hero-img">
-                                        <img src="assets/img/laptop.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>		
-		<a href="#how_work" class="down-arrow-click"><div class="down-arrow bounce"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-img wow fadeInRight" data-wow-delay="0.3s" data-wow-offset="100">
+			<img src="assets/img/laptop.png" alt="">
+        </div>
+
+		<a href="#about" class="down-arrow-click bounce"><div class="down-arrow"></div></a>
 	</section>
-    <!-- End of Hero Area -->
+	<!-- End of Hero Area -->
 
 	<!-- How Work Area -->
 	<section class="section-margin section-padding how-work-wrap supplier-work" id="how_work">
