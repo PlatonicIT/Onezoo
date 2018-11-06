@@ -611,7 +611,7 @@ input, textarea, button[type=submit] {
     opacity: 1;
 }
 
-.search-box input, button[type=submit] {
+.search-box input {
     padding: 13px 25px;
     border: 1px solid rgba(0,0,0,0.5);
     font-size: 17px;
@@ -1012,7 +1012,7 @@ input, textarea, button[type=submit] {
     background-color: #ffc646;
 }
 
-.button.boxed-btn {
+.supplier .button.boxed-btn {
     background-color: #ffc646;
     border-color: #ffc646;
 }

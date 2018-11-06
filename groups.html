@@ -22,11 +22,57 @@
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
-<body>
+<body class="groups">
+	
+	<!-- Popup Get Started -->
+	<div class="modal fade" id="popupContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalCenterTitle">Get Started</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<form action="#">
+						<div class="form-group">
+							<label for="username">User Name:</label> 
+							<input id="username" name="username" placeholder="Username" type="text" class="form-control here">
+						</div>
+						<div class="form-group">
+							<label for="company">Company Name:</label> 
+							<input id="company" name="company" placeholder="Company Name" type="text" class="form-control here">
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone Number:</label> 
+							<input id="phone" name="phone" placeholder="Phone Number" type="tel" class="form-control here">
+						</div>
+						<div class="form-group">
+							<label for="office">Head Office</label> 
+							<input id="office" name="office" placeholder="Head office" type="text" class="form-control here">
+						</div>
+						<div class="form-group">
+							<label for="postcode">Post Code</label> 
+							<input id="postcode" name="postcode" placeholder="Postcode" type="text" class="form-control here">
+						</div> 
+						<div class="form-group">
+							<button name="submit" type="submit" class="button groups boxed-btn btn-block">Submit</button>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Close <i class="fa fa-close"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of Popup Get Started -->
+
 	<!-- Header Top -->
 	<header class="header-wrap empty-navigation">
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row align-items-center">
 				<div class="col-md-4">
 					<div class="row">
 						<div class="col-sm-12">
@@ -40,7 +86,7 @@
 				<div class="col-md-8 text-right">
 					<div class="top-call-to group-button wow fadeInRight">
 						<a id="contact-btn" href="javascript:void(0);" class="button groups">contact us</a>
-						<a href="#" class="button groups boxed-btn">Get started</a>
+						<a href="#" class="button groups boxed-btn" data-toggle="modal" data-target="#popupContact">Get started</a>
 
 						<!-- Action For Contact Us -->
 						<div class="contact-popup groups">
@@ -79,27 +125,35 @@
 	<!-- End of Hero Area -->
 	
 	<!-- Services Area -->
-    <section class="section-padding gray-bg">
-        <div class="container-fluid">
-			<div class="row single-category">
-				<div class="col-md-4 text-center">
-					<img src="assets/img/icons/Search-Icon.png" alt="Find Suppliers">
-					<h2>Find Suppliers</h2>
-					<p>With hundreds of suppliers Australia wide, you can find the supplier you need in minutes. From Chairs and Tables to Milk and Cookies, ONEzoo has the supplier you need. We can even load your existing suppliers up for you to order from.</p>
+	<section class="section-padding services-wrap-s2 bg-light __web-inspector-hide-shortcut__">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<div class="single-service-s2">
+						<img src="assets/img/icons/Search-Icon.png" alt="">
+						<h4>Find Suppliers</h4>
+						<p>With hundreds of suppliers Australia wide, you can find the supplier you need in minutes. From Chairs and Tables to Milk and Cookies, ONEzoo has the supplier you need. We can even load your existing suppliers up for you to order from.</p>
+					</div>
 				</div>
-				<div class="col-md-4 text-center">
-					<img src="assets/img/icons/Wheel-02.png" alt="Restrictions">
-					<h2>Restrictions</h2>
-					<p>We can apply restrictions on the venues under your control. Don't want them to see new suppliers? Don't want them to adjust their product list? it’s not a problem we have it covered.</p>
+				
+				<div class="col-lg-4 col-sm-6">
+					<div class="single-service-s2">
+						<img src="assets/img/icons/Search-Icon.png" alt="">
+						<h4>Restrictions</h4>
+						<p>We can apply restrictions on the venues under your control. Don't want them to see new suppliers? Don't want them to adjust their product list? it’s not a problem we have it covered.</p>
+					</div>
 				</div>
-				<div class="col-md-4 text-center">
-					<img src="assets/img/icons/Coart.png" alt="Reports and Rebates">
-					<h2>Reports and Rebates</h2>
-					<p>ONEzoo allows you to see reporting on your venues, giving you real-time insights. We can also set up rebates to your head offices from suppliers or venues under your control.</p>
+
+				<div class="col-lg-4 col-sm-6">
+					<div class="single-service-s2">
+						<img src="assets/img/icons/Search-Icon.png" alt="">
+						<h4>Reports and Rebates</h4>
+						<p>ONEzoo allows you to see reporting on your venues, giving you real-time insights. We can also set up rebates to your head offices from suppliers or venues under your control.</p>
+					</div>
 				</div>
-			</div>         
-        </div>
-    </section>
+			</div>
+		</div>
+	</section>
 	<!-- End of Services Area -->	
 
 	<!-- Edge to Edge Area -->
