@@ -611,7 +611,7 @@ input, textarea, button[type=submit] {
     opacity: 1;
 }
 
-.search-box input {
+.search-box input, .search-box button {
     padding: 13px 25px;
     border: 1px solid rgba(0,0,0,0.5);
     font-size: 17px;
@@ -1015,6 +1015,20 @@ input, textarea, button[type=submit] {
 .supplier .button.boxed-btn {
     background-color: #ffc646;
     border-color: #ffc646;
+}
+
+/* Brands Page */
+.brands .main-menu li.is-active > a::before {
+    background-color: #774dc1;
+}
+ 
+.brands .slicknav_btn {
+    background-color: #774dc1;
+}
+
+.brands .button.boxed-btn {
+    background-color: #774dc1;
+    border-color: #774dc1;
 }
 
 /* Navigatin Style 2 */
