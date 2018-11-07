@@ -197,12 +197,10 @@
 
         var $height = $('.navigation-wrap').height();                                  
         $('.hero-wrap.homepage-hero').css({             
-            'height': 'calc(100vh -' + $height + ')',
+
             'height': 'calc(100vh - '+$height+'px)'
         }); 
-        console.log($height);
-
-
+    
         // Testimonial Slider
         $('.testimonial-slide').slick({
             centerMode: true,

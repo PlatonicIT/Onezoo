@@ -723,10 +723,6 @@ input, textarea, button[type=submit] {
     width: 100%;
     z-index: 8;
 }
-.navigation-wrap.supplier {
-	background-color: #1d2929;
-	
-}
 
 .navigation-wrap.sticky-menu {
     position: fixed;
@@ -736,12 +732,7 @@ input, textarea, button[type=submit] {
 .mobile-only {
     display: none!important;
 }
-.hero-wrap {
-    padding: 100px 0;
-    position: relative;
-    background-color: #f2f2f2;
-/*    overflow: hidden;*/
-}
+
 .navigation-wrap {
     position: relative;
     padding: 0;
@@ -1106,16 +1097,15 @@ input, textarea, button[type=submit] {
 .hero-wrap {
     padding: 100px 0;
     position: relative;
-}
-.hero-wrap.supplier {
-    background-image: url('assets/img/supplier-hero-shape.png');
-    background-position-x: right;
-    background-position-y: -175px;
-    z-index: 3;
     background-color: #f2f2f2;
-    background-size: 50%;
-    background-repeat: no-repeat;
+/*    overflow: hidden;*/
 }
+
+.hero-wrap>.container-fluid {
+	z-index: 9;
+	position: relative;
+}
+
 .hero-wrap.animation {
     background-image: url('assets/img/hero-shape.png');
     background-position-x: right;
@@ -1126,6 +1116,9 @@ input, textarea, button[type=submit] {
     background-repeat: no-repeat;
 }
 
+.hero-wrap.animation.supplier {
+    background-image: url('assets/img/supplier-hero-shape.png');
+}
 
 .hero-inner > img {
     margin-bottom: 10px;
@@ -1149,7 +1142,7 @@ input, textarea, button[type=submit] {
 
 .hero-img {
     position: absolute;
-    right: 8%;
+    right: 5%;
     top: 0;
     height: 100%;
     padding: 50px 0;
@@ -1193,16 +1186,17 @@ input, textarea, button[type=submit] {
 
 
 /* Homepage Hero */
+
 .hero-wrap.homepage-hero {
     padding: 0;
     height: 100vh;
 }
 
-.hero-wrap.homepage-hero div {
+.hero-wrap .container-fluid, .hero-wrap .container-fluid div {
     height: 100%;
 }
 
-.hero-wrap.homepage-hero .row div {
+.hero-wrap .row div {
     height: auto;
 }
 
@@ -2304,14 +2298,9 @@ span.slicknav_menutxt {
     right: 0;
 }
 
-.how-content {
-    text-align: justify;
-}
-
 .how-content img {
     margin-bottom: 30px;
 }
-
 
 .multi-title {
 	font-weight: 400;
@@ -2319,7 +2308,6 @@ span.slicknav_menutxt {
 	font-size: 24px;
 	text-transform: uppercase;
 }
-
 
 
 .tab-app-text {
