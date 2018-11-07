@@ -1,6 +1,11 @@
 /*======================
-Large LAYOUT : 1280px.
+Large LAYOUT
 =======================*/
+@media only screen and (max-width: 1800px) {
+   .hero-img {
+	right: 0;
+	}
+}
 @media only screen and (max-width: 1600px) { 
     .link-third img {
         max-width: 76%;
@@ -14,9 +19,7 @@ Large LAYOUT : 1280px.
     .simple-single-how h1 {
         font-size: 34px;
     }
-    .hero-img {
-        right: 0;
-    }
+ 
 }
 @media only screen and (min-width: 1400px) {
     
@@ -517,11 +520,11 @@ SMALL MOBILE LAYOUT : 320px.
     .footer-wrap h4.opened[data-target]:after {
         top: 0;
         padding-left: 0;
-        transform: rotate(-180deg);
         -webkit-transform: rotate(-180deg);
         -moz-transform: rotate(-180deg);
         -ms-transform: rotate(-180deg);
         -o-transform: rotate(-180deg);
+		transform: rotate(-180deg);
 }
     .footer-wrap .row > div {
         margin-bottom: 10px;
