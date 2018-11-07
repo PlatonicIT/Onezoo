@@ -330,7 +330,6 @@ input, textarea, button[type=submit] {
     box-shadow: 0 3px 6px rgba(0,0,0,.1);
     background: #fff;
     padding: 30px;
-    position: relative;
     color: #1d2929;
     max-width: 267px;
     min-width: 224px;
@@ -354,7 +353,6 @@ input, textarea, button[type=submit] {
     position: absolute;
     top: 100%;
     visibility: hidden;
-    width: 100%;
     z-index: 8;
     font-size: 14px;
     text-align: left;
@@ -725,6 +723,10 @@ input, textarea, button[type=submit] {
     width: 100%;
     z-index: 8;
 }
+.navigation-wrap.supplier {
+	background-color: #1d2929;
+	
+}
 
 .navigation-wrap.sticky-menu {
     position: fixed;
@@ -860,11 +862,11 @@ input, textarea, button[type=submit] {
     content: "\f105";
     font-family: FontAwesome;
     padding: 0;
-    transform: rotate(0);
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
+	transform: rotate(0);
 }
 
 .main-menu li.has-children .has-children:hover > a::after, .main-menu li.has-children .has-children:focus > a::after, .main-menu li.has-children .has-children.nav-opened > a::after {
@@ -933,7 +935,6 @@ input, textarea, button[type=submit] {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
-    transform: rotate(0deg);
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
@@ -1106,6 +1107,15 @@ input, textarea, button[type=submit] {
     padding: 100px 0;
     position: relative;
 }
+.hero-wrap.supplier {
+    background-image: url('assets/img/supplier-hero-shape.png');
+    background-position-x: right;
+    background-position-y: -175px;
+    z-index: 3;
+    background-color: #f2f2f2;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
 .hero-wrap.animation {
     background-image: url('assets/img/hero-shape.png');
     background-position-x: right;
@@ -1115,6 +1125,8 @@ input, textarea, button[type=submit] {
     background-size: 50%;
     background-repeat: no-repeat;
 }
+
+
 .hero-inner > img {
     margin-bottom: 10px;
 }
@@ -2360,12 +2372,9 @@ span.slicknav_menutxt {
 
 .single-service-s2 img, .single-service-s2 icon {
     margin-bottom: 20px;
-    font-size: 50px;
-    color: #ffc646;
-    max-width: 50px;
-    background: #ffc646;
-    border-radius: 50%;
-    border: 1px solid;
+/*    font-size: 50px;*/
+/*    color: #ffc646;*/
+    max-width: 35px;
 }
 
 
