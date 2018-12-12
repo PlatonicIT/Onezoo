@@ -1186,7 +1186,7 @@ input, textarea, button[type=submit] {
     height: 100vh;
 }
 
-.hero-wrap.homepage-hero div {
+.hero-wrap div {
     height: 100%;
 }
 

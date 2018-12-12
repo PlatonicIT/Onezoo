@@ -196,8 +196,7 @@
         } 
 
         var $height = $('.navigation-wrap').height();                                  
-        $('.hero-wrap.homepage-hero').css({             
-            'height': 'calc(100vh -' + $height + ')',
+        $('.hero-wrap.homepage-hero').css({          
             'height': 'calc(100vh - '+$height+'px)'
         }); 
         console.log($height);
