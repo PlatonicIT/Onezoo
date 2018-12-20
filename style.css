@@ -2513,11 +2513,45 @@ span.slicknav_menutxt {
 }
 
 .language .goog-te-gadget .goog-te-combo {
+    width: 180px;
     height: 35px;
-    padding: 0 25px 0 5px;
+    padding: 0 25px 0 0;
+    padding-left: 30px;
     margin: 0;
-    border-radius: 2px;
     border-style: solid;
     outline: none;
     border-top: none;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    z-index: 1;
+}
+
+.language::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    height: 25px;
+    width: 25px;
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    background-image: url('assets/img/google-logo.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.goog-te-banner-frame {
+    display: none!important;
+}
+
+body {
+    top: 0!important;
 }
