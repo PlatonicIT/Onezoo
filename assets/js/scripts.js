@@ -184,7 +184,7 @@
                         $('.hero-wrap').css({                        
                             'margin-top': $height
                         });                          
-                        console.log($height); // For Debugging Height
+                        // console.log($height); // For Debugging Height
                     } else {
                         $('.hero-wrap').css({                        
                             'margin-top': '0'
@@ -330,6 +330,53 @@
                 $(this).find('.my-tooltip').removeClass('show');
             });
         };
+
+        // Custom Tooltip
+        // var $trigger = $('.trigger'),
+        //     $target;
+        // $trigger.on( 'mouseenter', function() {
+        //     $target = $(this).parent().find('.my-tooltip');
+
+        //     var $url = $(location).attr('pathname'),
+        //         $height = $target.height(),
+        //         $innerYPos = event.clientY + 8,
+        //         $innerXPos = event.clientX - 38,
+        //         $pos_top;
+
+        //     // For Games Page
+        //     $pos_top = parseInt($innerYPos);
+
+        //     console.log($innerYPos);
+
+        //     var $pos_left = $innerXPos,
+        //         $style;
+
+        //     if($innerYPos > 50) {
+        //         $target.addClass('reverse-pos');
+        //         // $pos_top = parseInt($(this).offset().top - ($trigger.height() + 135));
+        //     } else {
+        //         $target.removeClass('reverse-pos');
+        //     }
+            
+        //     $style = {
+        //         'top': $pos_top,
+        //         'left': $pos_left,
+        //         'right': 'auto',
+        //         'visibility': 'visible',
+        //         'opacity': '1',
+        //         'transform':'scale(1)'
+        //     };
+
+        //     $target.css($style);
+        // });
+        
+        // $trigger.on( 'mouseleave', function() {
+        //     $target = $(this).parent().find('.my-tooltip');
+        //     $target.css({
+        //         'visibility': 'hidden',
+        //         'opacity': '0',
+        //     });
+        // });
             
     });
 })(jQuery);

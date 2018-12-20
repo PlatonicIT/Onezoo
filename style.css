@@ -345,7 +345,7 @@ input, textarea, button[type=submit] {
     -o-transition: transform .2s ease-in-out,opacity .2s ease-in-out,visibility .01s linear .2s;
     transition: transform .2s ease-in-out,opacity .2s ease-in-out,visibility .01s linear .2s;
     font-weight: 300;
-    left: 0;
+    right: 0;
     line-height: 22px;
     opacity: 0;
     padding-bottom: 10px;
@@ -353,7 +353,7 @@ input, textarea, button[type=submit] {
     position: absolute;
     top: 100%;
     visibility: hidden;
-    z-index: 8;
+    z-index: 999;
     font-size: 14px;
     text-align: left;
 }
@@ -387,7 +387,7 @@ input, textarea, button[type=submit] {
 .header-wrap {
     background-color: #fff;
     padding: 15px 0;
-    z-index: 9;
+    z-index: 99;
     position: relative;
 }
 
@@ -512,6 +512,7 @@ input, textarea, button[type=submit] {
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
+    right: 0;
 }
 
 .contact-hover-popup a {
@@ -521,7 +522,7 @@ input, textarea, button[type=submit] {
 
 .contact-hover-popup:before {
     position: absolute;
-    left: 5%;
+    right: 5%;
     top: 100%;
     border-top: 10px solid #185179;
     border-left: 7px solid transparent;
@@ -721,7 +722,7 @@ input, textarea, button[type=submit] {
     position: absolute;
     left: 0;
     width: 100%;
-    z-index: 8;
+    z-index: 98;
 }
 
 .navigation-wrap.sticky-menu {
@@ -1259,6 +1260,25 @@ input, textarea, button[type=submit] {
 }
 
 
+/* Plain Hero */
+.hero-wrap.plain-hero .hero-inner h2 {
+    font-size: 16px;
+    color: inherit;
+}
+
+.hero-wrap.plain-hero .hero-inner h1 {
+    color: inherit;
+}
+
+.hero-wrap.plain-hero {
+    background: #4071d9;
+    color: #fff;
+}
+
+/* Single Hero */
+.single-hero .hero-inner {
+    padding-left: 25px;
+}
 
 .down-arrow-click {
     position: absolute;
@@ -1317,15 +1337,14 @@ input, textarea, button[type=submit] {
 }
 
 .single-about h1 {
-    font-size: 37px;
+    font-size: 32px;
     font-weight: 300;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 
 .single-about {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 18px;
 }
 
 
@@ -2448,4 +2467,57 @@ span.slicknav_menutxt {
 
 .single-numbered p:last-child {
     margin-bottom: 0;
+}
+
+
+
+
+/* Clients Logo */
+.examples-wrap {
+    /* background-color: #f0f0f0; */
+}
+
+.clients-logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.single-client {
+    width: 150px;
+    height: 100px;
+    vertical-align: middle;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-client img {
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+
+/* Google Tranlator */
+.navigation-wrap .container-fluid {
+    position: relative;
+}
+
+.language {
+    position: absolute;
+    right: 15px;
+    top: 100%;
+    height: 35px;
+    overflow: hidden;
+}
+
+.language .goog-te-gadget .goog-te-combo {
+    height: 35px;
+    padding: 0 25px 0 5px;
+    margin: 0;
+    border-radius: 2px;
+    border-style: solid;
+    outline: none;
+    border-top: none;
 }

@@ -20,6 +20,9 @@
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
+
+
+
 <body class="homepage">
 
 	<!-- Navigation Area -->
@@ -61,13 +64,20 @@
 						</ul>
 					</div>
 				</div>
+				
+
+				<!-- Mobile Navigation -->
+				<div class="row align-items-center mobile-only">
+					<div class="mobile-menu"></div>
+				</div>
+				<!-- End of Mobile Navigation -->
 			</div>
 
-			<!-- Mobile Navigation -->
-			<div class="row align-items-center mobile-only">
-				<div class="mobile-menu"></div>
+			<!-- ============= language start ============= -->
+			<div class="language">
+				<div id="google_translate_element"></div>
 			</div>
-			<!-- End of Mobile Navigation -->
+			<!-- ============= language end ============= -->
 		</div>
 	</nav>
 	<!-- End of Navigation Area -->
@@ -463,18 +473,18 @@
 
 	<!-- Footer Area -->
 	<footer class="footer-wrap section-padding">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-3 col-xl-2 col-md-4">
 					<h4 data-target="fMenu1">Features</h4>
 					<ul class="footer-menu" data-menu="fMenu1">
-						<li><a href="#">Marketplace</a></li>
-						<li><a href="#">Ordering App</a></li>
+						<li><a href="customer.html">Marketplace</a></li>
+						<li><a href="orderlinks.html">Ordering App</a></li>
 						<li><a href="#">Custom Apps and Websites</a></li>
-						<li><a href="#">Reporting</a></li>
-						<li><a href="#">Earn Points</a></li>
-						<li><a href="#">Marketing</a></li>
-						<li><a href="#">Price Comparisons</a></li>
+						<li><a href="reports.html">Reporting</a></li>
+						<li><a href="earn-points.html">Earn Points</a></li>
+						<li><a href="marketing.html">Marketing</a></li>
+						<li><a href="price-comparisions.html">Price Comparisons</a></li>
 					</ul>
 				</div>
 				
@@ -496,7 +506,7 @@
 					<h4 data-target="fMenu3">Resources</h4>
 					<ul class="footer-menu" data-menu="fMenu3">
 						<li><a href="#">Supplier Success Stories</a></li>
-						<li><a href="#">Getting Started</a></li>
+						<li><a href="getting-start-supplier.html">Getting Started</a></li>
 						<li><a href="#">On Site Training</a></li>
 						<li><a href="#">Customer Stories</a></li>
 						<li><a href="#">FAQ</a></li>
@@ -508,10 +518,10 @@
 					<h4 data-target="fMenu4">Other Link</h4>
 					<ul class="footer-menu" data-menu="fMenu4">
 						<li><a href="#">Pricing</a></li>
-						<li><a href="#">Security</a></li>
-						<li><a href="#">Customer</a></li>
-						<li><a href="#">Brand</a></li>
-						<li><a href="#">Supplier</a></li>
+						<li><a href="security.html">Security</a></li>
+						<li><a href="customer.html">Customer</a></li>
+						<li><a href="brands.html">Brand</a></li>
+						<li><a href="supplier.html">Supplier</a></li>
 					</ul>
 				</div>
 
@@ -519,7 +529,7 @@
 					<h4 data-target="fMenu5" class="d-block d-md-none">Others</h4>
 					<ul class="footer-menu" data-menu="fMenu5">
 						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Support</a></li>
+						<li><a href="">Support</a></li>
 						<li><a href="#">FAQ</a></li>
 						<li><a href="#">Blog</a></li>
 					</ul>
@@ -567,5 +577,13 @@
 	<script type="text/javascript" src="assets/js/send-mail.js"></script>
 	<!-- Custom Scripts -->
 	<script type="text/javascript" src="assets/js/scripts.js"></script>
+
+	​<script type="text/javascript">
+		function googleTranslateElementInit() {
+		
+			new google.translate.TranslateElement({pageLanguage: 'en'}, google_translate_element);
+		}
+	</script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
