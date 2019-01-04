@@ -80,6 +80,25 @@ Large LAYOUT
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    .listcontainer {
+        margin: 0 auto;
+        max-width: 1022px;
+        width: 100%;
+    }
+    .listbox .list {
+        width: 78%;
+        font-size: 16px;
+    }
+    .listtext.boxright {
+        width: 62%;
+    }
+    .margin-right, .listimg {
+        width: 28%;
+    }
+    
+    .list.margin-top {
+        margin-top: 50px;
+    }
     .hero-wrap.simple-hero .hero-inner {
         padding-left: 40px;
     }
@@ -176,7 +195,22 @@ MEDIAM LAYOUT : 1280px.
 =======================*/
 
 @media only screen and (max-width: 1200px) {
+    .listbox .list {
+        margin: 0 auto 23px;
+        width: 97%;
+        float: none !important;
+    }
 
+    .easy-to-use-wrap {
+        background-image: none;
+    }
+
+    .listtext.boxright {
+        width: 58%;
+    }
+    .listtext h3 {
+        font-size: 29px;
+    }
     .hero-inner h1 {
         margin-bottom: 20px;
         font-size: 36px;
@@ -220,6 +254,10 @@ MEDIAM LAYOUT : 1280px.
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .cta-wrap .single-img {
+        margin-left: -75px;
+    }
+
     .navigation-wrap.nav-s2 .main-menu li a {
         padding: 20px 3px;
         font-size: 14px;
@@ -272,7 +310,7 @@ MEDIAM LAYOUT : 1280px.
     }
 
     .group-button img {
-        width: 48%;
+        /* width: 48%; */
         margin-right: 10px;
     }
     
@@ -338,8 +376,11 @@ MEDIAM LAYOUT : 1280px.
 }
 
 @media only screen and (max-width: 992px){   
+    .contact-hover-popup {
+        min-width: max-content;
+    }
     .navigation-wrap {
-        padding: 5px 0;
+        padding: 0 0;
         background-color: #fff;
     }    
     .navigation-wrap .container-fluid {
@@ -369,7 +410,7 @@ MEDIAM LAYOUT : 1280px.
     .hero-wrap.animation {
         background-image: none;
     }
-    .hero-img {
+    .hero-img, .hero-wrap > .hero-img {
         position: inherit;
         width: 95%;
         margin: 0 auto;
@@ -490,15 +531,45 @@ SMALL MOBILE LAYOUT : 320px.
     }
 }
 @media only screen and (max-width: 767px) {
+    .testimonials-wrap > .container-fluid {
+        max-width: 100%;
+    }
+    .monkey-bg {
+        background-image: none;
+    }
+    .listbox .list {
+        text-align: center;
+    }
+    .listimg {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        width: 45%;
+    }
+    .listtext.boxright {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    .listimg.margin-right {
+        float: none;
+        margin: 0 auto;
+    }
     .hero-absolute-bg.inner-img {
         padding: 20px 0;
+    }
+    .hero-wrap.simple-hero {
+        padding-bottom: 0;
+        display: block;
     }
     .footer-menu {
         max-height: 0;
         overflow: hidden;
     }
     .footer-wrap h4[data-target] {
-        border-bottom: 1px solid;
+        border-bottom: 1px solid rgba(255,255,255, 0.2);
         padding: 10px;
         padding-left: 0;
         position: relative;
@@ -1043,6 +1114,11 @@ Tablet LAYOUT: 768px.
     }
 }
 
+@media only screen and (min-width: 560px) and (max-width: 992px) {
+    .logo {
+        margin: 10px 0;
+    }
+}
 
 @media only screen and (max-width: 767px){
 
