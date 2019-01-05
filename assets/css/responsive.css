@@ -199,6 +199,7 @@ MEDIAM LAYOUT : 1280px.
         margin: 0 auto 23px;
         width: 97%;
         float: none !important;
+        overflow: hidden;
     }
 
     .easy-to-use-wrap {
@@ -206,7 +207,7 @@ MEDIAM LAYOUT : 1280px.
     }
 
     .listtext.boxright {
-        width: 58%;
+        width: 56%;
     }
     .listtext h3 {
         font-size: 29px;
@@ -375,7 +376,8 @@ MEDIAM LAYOUT : 1280px.
     }
 }
 
-@media only screen and (max-width: 992px){   
+@media only screen and (max-width: 992px){ 
+
     .contact-hover-popup {
         min-width: max-content;
     }
@@ -512,6 +514,26 @@ MEDIAM LAYOUT : 1280px.
 
     .icon--search {
         color: #000;
+    }
+
+    .hero-wrap.apps-hero {
+        padding: 100px 0;
+    }
+    
+    .apps-hero .hero-inner {
+        max-width: 450px;
+    }
+
+    .apps-hero .hero-inner h1 {
+        font-size: 50px;
+    }
+
+    .apps-hero .hero-inner h2 {
+        font-size: 20px;
+    }
+
+    .single-how h1 {
+        font-size: 36px;
     }
 }
 
@@ -1121,6 +1143,22 @@ Tablet LAYOUT: 768px.
 }
 
 @media only screen and (max-width: 767px){
+
+    .apps-hero .hero-inner {
+        max-width: 250px;
+    }
+
+    .single-how h1 {
+        font-size: 28px;
+    }
+
+    .apps-hero .hero-inner h1 {
+        font-size: 30px;
+    }
+
+    .apps-hero .hero-inner h2 {
+        font-size: 18px;
+    }
 
     .numbered-wrap {
         overflow: hidden;

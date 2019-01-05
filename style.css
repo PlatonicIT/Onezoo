@@ -1355,6 +1355,34 @@ input, textarea, button[type=submit] {
     padding: 4px 0;
     vertical-align: middle;
 }
+
+/* Apps Hero */
+.apps-hero {
+    color: #fff;
+    padding: 250px 0;
+}
+
+.apps-hero .hero-inner {
+    letter-spacing: 1px;
+}
+
+.apps-hero .hero-inner h1 {
+    font-size: 150px;
+    margin: 0;
+    color: inherit;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.apps-hero .hero-inner h2 {
+    margin: 0;
+    color: inherit;
+    font-weight: 400;
+}
+
+
+
 /**
 * ===================================
 * = 05. About CSS
