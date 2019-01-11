@@ -2,7 +2,7 @@
 Template Name: Onezoo
 Version: 1.0.1
 Author: MD MAHBUBUL ALAM
-Author URI: https://www.platonicit.com/
+Author URI: //www.platonicit.com/
 Description: MyPort is a Responsive CV / Resume / V-Card / Personal Website / Portfolio Template made with latest technologies HTML5, CSS3, Bootstrap4, Font-Awesome-5, jQuery and Ajax. Introduce yourself like a professional with this unique beautiful design. Provide every important information with awesome design components to your clients or employers. 
             It is highly customizable because of it's code quality & of course clean, modern and creative. It is smartly responsive that makes it look flexible & crisp on any mobile or tab device.
 */
@@ -54,7 +54,7 @@ ul {
     list-style: none;
 }
 
-p a {
+p > a {
     color: inherit;
     border-bottom: 1px dashed #3980fb;
 }
@@ -86,6 +86,11 @@ img {
 input, textarea, button[type=submit] {
     padding: 10px 15px;
     margin-bottom: 1em;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0;
+    border-color: #ced4da;
 }
 
 .clear {
@@ -543,6 +548,7 @@ input, textarea, button[type=submit] {
 .contact-hover-popup a {
     display: block;
     font-weight: normal;
+    color: #737a79;
 }
 
 .contact-hover-popup:before {
@@ -553,6 +559,10 @@ input, textarea, button[type=submit] {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     content: '';
+}
+
+.contact-hover-popup a:hover {
+    color: #185179;
 }
 
 .contact-hover:hover .contact-hover-popup, .contact-hover:focus .contact-hover-popup, .contact-hover.active .contact-hover-popup {
@@ -1053,6 +1063,11 @@ input, textarea, button[type=submit] {
     border-color: #774dc1;
 }
 
+.brands .button.boxed-btn:hover {
+    color: #fff;
+    background-color: #5f25c5;
+}
+
 /* Navigatin Style 2 */
 .navigation-wrap.nav-s2 {
     background-color: #fff;
@@ -1324,6 +1339,7 @@ input, textarea, button[type=submit] {
     text-align: center;
     background-repeat: no-repeat;
     font-size: 16px;
+    z-index: 9;
 }
 
 .down-arrow {
@@ -1364,7 +1380,7 @@ input, textarea, button[type=submit] {
 /* Apps Hero */
 .apps-hero {
     color: #fff;
-    padding: 250px 0;
+    padding: 300px 0;
 }
 
 .apps-hero .hero-inner {
@@ -1796,7 +1812,7 @@ h4+.footer-menu {
     display: block;
     position: relative;
     padding-left: 25px;
-    word-break: break-all;
+    word-break: keep-all;
     text-transform: inherit;
 }
 
@@ -2636,14 +2652,12 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    border-bottom: 1px solid #f0f0f0;
 }
 
 .easy-to-use-wrap {
     background-image: url('assets/img/app-bodybg.png');
     background-color: #fff;
     background-size: 100% 100%;
-    border-bottom: 1px solid #f0f0f0;
 }
 
 .listcontainer {
@@ -2765,4 +2779,8 @@ body {
 
 .app-service {
     margin-top: -40px;
+}
+
+.icon-single-wrap .single-about .about-img {
+    margin: 0 0 30px;
 }
