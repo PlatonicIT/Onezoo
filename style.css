@@ -54,6 +54,11 @@ ul {
     list-style: none;
 }
 
+p a {
+    color: inherit;
+    border-bottom: 1px dashed #3980fb;
+}
+
 
 h1 {
     line-height: 1.4;
@@ -1430,7 +1435,7 @@ input, textarea, button[type=submit] {
 }
 
 .cta-wrap h1 {
-    color: #fff;
+    color: inherit;
     font-size: 45px;
     font-weight: 400;
 }
@@ -2699,4 +2704,65 @@ body {
 
 .list.margin-top {
     margin-top: 50px;
+}
+
+.order-form {
+    color: #fff;
+}
+
+.order-form h5 {
+    color: inherit;
+}
+
+.order-form p {
+    color: inherit;
+}
+
+.cta-wrap.dark {
+    color: #333;
+}
+
+.padding-md {
+    padding: 50px 0;
+}
+
+.our-clients .clients-title {
+    font-size: 25px;
+    color: inherit;
+    display: block;
+}
+
+.our-clients .client-logo {
+    padding: 0 10px;
+    display: block;
+}
+
+.branding-logo {
+    margin: 30px 0;
+}
+
+.branding-logo+.button {
+    margin-top: 30px;
+}
+
+.branding-logo li {
+    display: inline-block;
+    width: 24%;
+    padding: 0 15px;
+}
+
+.app-service .about-img {
+    margin: 0;
+}
+
+.app-service .single-about h5 {
+    margin: 1em 0;
+}
+
+.app-service .single-about {
+    margin-top: 40px;
+}
+
+.app-service {
+    margin-top: -40px;
 }

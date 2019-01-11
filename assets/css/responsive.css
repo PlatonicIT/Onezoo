@@ -378,6 +378,16 @@ MEDIAM LAYOUT : 1280px.
 
 @media only screen and (max-width: 992px){ 
 
+    .our-clients .clients-title {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .our-clients .client-logo {
+        max-width: 180px;
+        margin: 0 auto 20px;
+    }
+
     .contact-hover-popup {
         min-width: max-content;
     }
@@ -553,6 +563,11 @@ SMALL MOBILE LAYOUT : 320px.
     }
 }
 @media only screen and (max-width: 767px) {
+    
+    .our-clients .clients-title {
+        font-size: 30px;
+    }
+
     .testimonials-wrap > .container-fluid {
         max-width: 100%;
     }
