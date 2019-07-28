@@ -656,7 +656,7 @@ input, textarea, button[type=submit] {
 .search-box input, .search-box button {
     padding: 12px 20px;
     border: 1px solid rgba(0,0,0,0.5);
-    font-size: 17px;
+    font-size: 16px;
     border-radius: 1px;
     background: transparent;
 }
@@ -724,9 +724,9 @@ input, textarea, button[type=submit] {
 }
 
 .typed-wrap {
-    font-size: 24px;
+    font-size: 16px;
     color: #ffffff;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
 }
 
